@@ -3,6 +3,8 @@
 $primary: blue;
 $black: #000000;
 $white: #FFFFFF;
+$map: './map.svg';
+$variable-columns: false;
 
 $mobile-breakpoint: 768px;
 $tablet-min-breakpoint: 769px;
@@ -29,13 +31,65 @@ $desktop-breakpoint: 1024px;
     margin-top: -4%;
 }
 
-.column {
-    // background-color: #FFFFFF;
-    background-color: $primary;
-    // margin-right: 2.5rem;
-    // height: 64vh;
+.is-image {
+    background-image: url($map);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
+.column.persCon {
+    margin-top: -3%;
+}
+
+.title.perspCon {
+    color: $black;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 5.75rem;
+    margin-top: 7%;
+    margin-left: 9%;
+}
+
+.column.persCon {
+    height: 38.818rem;
+    width: 29.093rem;
+    color: $white;
+    background-color: $black;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.563rem;
+    justify-content: center;
+    margin-right: 2.494rem;
+}
+.persCon-aligment{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.column.persCon p{
+    width: 14.375rem;
+}
+
+.maskgroup {
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 2;
+}
+
+.blur-layer {
+    background: rgba(112, 112, 112, 0.3);
+    height: 100%;
+    backdrop-filter: blur(48px);
+}
+ 
 
 @media (max-width: $mobile-breakpoint) {
     .slogan {
