@@ -42,6 +42,7 @@ $desktop-breakpoint: 1024px;
     margin-top: -3%;
 }
 
+
 .title.perspCon {
     color: $black;
     font-family: 'Lora';
@@ -51,6 +52,11 @@ $desktop-breakpoint: 1024px;
     line-height: 5.75rem;
     margin-top: 7%;
     margin-left: 9%;
+}
+
+.columns.perspCon {
+    display: grid;
+    gap: 2.494rem;
 }
 
 .column.persCon {
@@ -63,9 +69,9 @@ $desktop-breakpoint: 1024px;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.563rem;
-    justify-content: center;
-    margin-right: 2.494rem;
+    // margin-right: 2.494rem;
 }
+
 .persCon-aligment{
     height: 70%;
     display: flex;
@@ -96,11 +102,47 @@ $desktop-breakpoint: 1024px;
         font-size: 2rem;
         line-height: 2.34rem;
     }
+
+    .title.perspCon {
+        font-size: 3.094rem;
+        line-height: 3.953rem;
+        margin-left: 3%;
+    }
+
+    .column.persCon {
+        height: 32.6rem;
+        width: 22.875rem;
+        color: $white;
+        background-color: $black;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2.563rem;
+    }
 }
 
 @media (min-width: $tablet-min-breakpoint) and (max-width: $tablet-max-breakpoint) {
     .slogan {
         font-size: 5.3rem;
         line-height: 6.2rem;
+    }
+
+    .title.perspCon {
+        font-size: 3.094rem;
+        line-height: 3.953rem;
+        margin-left: 3%;
+    }
+
+    .column.persCon {
+        height: 32.6rem;
+        width: 15rem;
+        color: $white;
+        background-color: $black;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2.563rem;
     }
 }

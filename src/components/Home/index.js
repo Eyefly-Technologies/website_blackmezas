@@ -43,7 +43,7 @@ const Home = () => (
             </div>
             <div className="hero-body">
                 <div className="container has-text-centered">
-                    <div className="columns">
+                    <div className="columns perspCon">
                         <div className="column persCon">
                             <div className='blur-layer'>
                                 <div className='maskgroup'>
