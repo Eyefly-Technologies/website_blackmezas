@@ -1,10 +1,15 @@
 @import "~bulma/bulma";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
 
-$primary: blue;
+$primary: #0496FF;
 $black: #000000;
 $white: #FFFFFF;
+
+$font-size-web: 4.5rem;
+$font-family-web: 'Lora';
+$title-line-height-web: 5.75rem;
+
 $map: './map.svg';
-$variable-columns: false;
 
 $mobile-breakpoint: 768px;
 $tablet-min-breakpoint: 769px;
@@ -45,11 +50,11 @@ $desktop-breakpoint: 1024px;
 
 .title.perspCon {
     color: $black;
-    font-family: 'Lora';
+    font-family: $font-family-web;
     font-style: normal;
     font-weight: 700;
-    font-size: 4.5rem;
-    line-height: 5.75rem;
+    font-size: $font-size-web;
+    line-height: $title-line-height-web;
     margin-top: 7%;
     margin-left: 9%;
 }
@@ -64,12 +69,11 @@ $desktop-breakpoint: 1024px;
     width: 29.093rem;
     color: $white;
     background-color: $black;
-    font-family: 'Lora';
+    font-family: $font-family-web;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.563rem;
-    // margin-right: 2.494rem;
 }
 
 .persCon-aligment{
@@ -94,6 +98,59 @@ $desktop-breakpoint: 1024px;
     background: rgba(112, 112, 112, 0.3);
     height: 100%;
     backdrop-filter: blur(48px);
+}
+
+// La formula correcta
+.title.formcorr {
+    font-family: $font-family-web;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $font-size-web;
+    line-height: $title-line-height-web;
+    width: 21.125rem;
+    margin-left: 7rem;
+}
+
+.formCorrCon {
+    display: flex;
+}
+
+.formCorrNum {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.75rem;
+    line-height: 4.438rem;
+    color: $primary;
+}
+
+.formCorrTit {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    color: $white;
+    padding-top: 2%;
+}
+
+.formCorrDesc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: 2px;
+    width: 22.125rem;
+}
+
+.columns.formCorrTop {
+    padding-bottom: 2.5rem;
+}
+
+.columns.formCorrBottom {
+    padding-top: 2.5rem;
+    // background-color: #426b88;
 }
  
 

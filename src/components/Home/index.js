@@ -89,28 +89,50 @@ const Home = () => (
         <section className="hero is-black is-fullheight">
             <div className="hero-body">
                 <div className="container">
-                    <p className="title">
+                    <p className="title formcorr">
                         La fórmula correcta
                     </p>
                 </div>
                 <div className="container">
-                    <div className="columns perspCon">
+                    <div className="columns formCorrTop">
                         <div className="column">
-                            {/* <img src={maskGroup} /> */}
-                            <p>
-                                Destructuración del trabajo al alza.
+                            <div className='formCorrCon'>
+                                <p className='formCorrNum'>01</p>
+                                <p className='formCorrTit'>Costo</p>
+                            </div>
+                            <p className='formCorrDesc'>
+                                Pagas lo que consumes en espacio y tiempo.
                             </p>
                         </div>
-                        <div className="column">2</div>
+                        <div className="column">
+                            <div className='formCorrCon'>
+                                <p className='formCorrNum'>02</p>
+                                <p className='formCorrTit'>Flexibilidad</p>
+                            </div>
+                            <p className='formCorrDesc'>
+                                Contratos a la medida de tus necesidades.
+                            </p>
+                        </div>
                     </div>
-                    <div className="columns">
+                    <div className="columns formCorrBottom">
                         <div className="column">
-                            {/* <img src={maskGroup} /> */}
-                            <p>
-                                Destructuración del trabajo al alza.
+                            <div className='formCorrCon'>
+                                <p className='formCorrNum'>03</p>
+                                <p className='formCorrTit'>Amenities</p>
+                            </div>
+                            <p className='formCorrDesc'>
+                                Amenidades hoteleras que te generan valor.
                             </p>
                         </div>
-                        <div className="column">2</div>
+                        <div className="column">
+                            <div className='formCorrCon'>
+                                <p className='formCorrNum'>04</p>
+                                <p className='formCorrTit'>Comunidad</p>
+                            </div>
+                            <p className='formCorrDesc'>
+                                Forma parte de un selecto club con beneficios considerables.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
