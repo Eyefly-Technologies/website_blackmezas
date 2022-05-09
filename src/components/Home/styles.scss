@@ -1,6 +1,13 @@
+@import "~bulma/bulma";
+
 $primary: blue;
 $black: #000000;
 $white: #FFFFFF;
+
+$mobile-breakpoint: 768px;
+$tablet-min-breakpoint: 769px;
+$tablet-max-breakpoint: 1023px;
+$desktop-breakpoint: 1024px;
 
 
 .is-black {
@@ -9,4 +16,37 @@ $white: #FFFFFF;
 
 .is-white {
     background-color: $white;
+}
+
+
+.slogan {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.25rem;
+    line-height: 7.313rem;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.column {
+    // background-color: #FFFFFF;
+    background-color: $primary;
+    // margin-right: 2.5rem;
+    // height: 64vh;
+}
+
+
+@media (max-width: $mobile-breakpoint) {
+    .slogan {
+        font-size: 2rem;
+        line-height: 2.34rem;
+    }
+}
+
+@media (min-width: $tablet-min-breakpoint) and (max-width: $tablet-max-breakpoint) {
+    .slogan {
+        font-size: 5.3rem;
+        line-height: 6.2rem;
+    }
 }
