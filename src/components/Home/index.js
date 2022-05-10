@@ -87,7 +87,7 @@ const Home = () => (
 
         {/* La formula correcta */}
         <section className="hero is-black is-fullheight">
-            <div className="hero-body">
+            <div className="hero-body formCorrMobile">
                 <div className="container">
                     <p className="title formcorr">
                         La fórmula correcta

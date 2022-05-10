@@ -9,6 +9,9 @@ $font-size-web: 4.5rem;
 $font-family-web: 'Lora';
 $title-line-height-web: 5.75rem;
 
+$font-size-mobile: 3.094rem;
+$title-line-height-mobile: 3.953rem;
+
 $map: './map.svg';
 
 $mobile-breakpoint: 768px;
@@ -132,6 +135,7 @@ $desktop-breakpoint: 1024px;
     line-height: 2.375rem;
     color: $white;
     padding-top: 2%;
+    padding-left: 1.5%;
 }
 
 .formCorrDesc {
@@ -150,7 +154,6 @@ $desktop-breakpoint: 1024px;
 
 .columns.formCorrBottom {
     padding-top: 2.5rem;
-    // background-color: #426b88;
 }
  
 
@@ -174,8 +177,41 @@ $desktop-breakpoint: 1024px;
         font-family: 'Lora';
         font-style: normal;
         font-weight: 400;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         line-height: 2.563rem;
+    }
+
+    // La formula correcta
+    .hero-body.formCorrMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title.formcorr {
+        font-size: $font-size-mobile;
+        line-height: $title-line-height-mobile;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 15%;
+    }
+
+    .formCorrNum {
+        font-size: 2.5rem;
+        line-height: 4.438rem;
+    }
+    
+    .formCorrTit {
+        font-size: 1.125rem;
+        line-height: 2.375rem;
+        padding-top: 3%;
+    }
+
+    .columns.formCorrTop {
+        padding-bottom: 0rem;
+    }
+    
+    .columns.formCorrBottom {
+        padding-top: 0rem;
     }
 }
 
@@ -190,6 +226,7 @@ $desktop-breakpoint: 1024px;
         line-height: 3.953rem;
         margin-left: 3%;
     }
+    
 
     .column.persCon {
         height: 32.6rem;
