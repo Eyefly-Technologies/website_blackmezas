@@ -103,7 +103,11 @@ $desktop-breakpoint: 1024px;
     backdrop-filter: blur(48px);
 }
 
-// La formula correcta
+/*
+------------------------------
+    La formula correcta
+------------------------------
+ */
 .title.formcorr {
     font-family: $font-family-web;
     font-style: normal;
@@ -154,6 +158,74 @@ $desktop-breakpoint: 1024px;
 
 .columns.formCorrBottom {
     padding-top: 2.5rem;
+}
+
+/*
+----------------------------
+    Propuesta de valor
+----------------------------
+ */
+.hero-body.pvalor {
+    display: flex;
+    flex-direction: column;
+}
+
+.title.pvalor {
+    font-family: $font-family-web;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $font-size-web;
+    line-height: $title-line-height-web;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.columns.pvalor {
+    display: grid;
+    gap: 4.188rem;
+}
+
+.columns.pvalor.top {
+    margin-bottom: 4.188rem;
+}
+
+.column.pvalor {
+    width: 25.313rem;
+    height: 19.75rem;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+}
+
+.pvalorTit {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: $white;
+    margin-top: 1.438rem;
+    margin-bottom: 0.75rem;
+}
+
+.pvalorDesc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: $white;
+    opacity: 0.7;
+}
+
+.imgMedal, .imgMarker {
+    margin-left: -1.5%;
+}
+
+.pvalorItems {
+    width: 20.255rem;
+    margin-top: 1.875rem;
 }
  
 

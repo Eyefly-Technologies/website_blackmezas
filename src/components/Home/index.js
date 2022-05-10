@@ -4,6 +4,10 @@ import 'bulma/css/bulma.min.css';
 
 import logo from './logo.svg';
 import maskGroup from './MaskGroup.svg';
+import Schedule from './Schedule.svg';
+import Medal from './Medal.svg';
+import Wallet from './Wallet.svg';
+import Marker from './Marker.svg'
 
 
 const Home = () => (
@@ -141,33 +145,55 @@ const Home = () => (
         {/* Propuesta de valor */}
         <section className="hero is-white is-fullheight">
             <div className="hero-head">
-                <p className="title">
+                <p className="title pvalor">
                     Propuesta de valor
                 </p>
             </div>
-            <div className="hero-body">
-                <div className="container has-text-centered">
-                    <div className="columns">
-                        <div className="column">
-                            {/* <img src={maskGroup} /> */}
-                            <p>
-                                Destructuración del trabajo al alza.
+            <div className="hero-body pvalor">
+                <div className="columns pvalor top">
+                    <div className="column pvalor">
+                        <div className='pvalorItems'>
+                            <img src={Schedule} alt=''/>
+                            <p className='pvalorTit'>Flexibilidad</p>
+                            <p className='pvalorDesc'>
+                                Puedes rentar por la cantidad de tiempo que desees. ¿Un mes? ¿Tres años? No hay problema.
                             </p>
                         </div>
-                        <div className="column">2</div>
                     </div>
-                    <div className="columns">
-                        <div className="column">
-                            {/* <img src={maskGroup} /> */}
-                            <p>
-                                Destructuración del trabajo al alza.
+                    <div className="column pvalor">
+                        <div className='pvalorItems'>
+                            <img src={Medal} alt='' className='imgMedal'/>
+                            <p className='pvalorTit'>Exclusividad</p>
+                            <p className='pvalorDesc'>
+                                Tendremos las mejores instalaciones y nuestros clientes serán parte de un selecto club, lleno de beneficios.
                             </p>
                         </div>
-                        <div className="column">2</div>
+                    </div>
+                </div>
+
+                <div className="columns pvalor">
+                    <div className="column pvalor">
+                        <div className='pvalorItems'>
+                            <img src={Wallet} alt=''/>
+                            <p className='pvalorTit'>Value for money</p>
+                            <p className='pvalorDesc'>
+                                En BlackMezas todo está incluido; desde café hasta horas estipuladas de reunión.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="column pvalor">
+                        <div className='pvalorItems'>
+                            <img src={Marker} alt='' className='imgMarker'/>
+                            <p className='pvalorTit'>Ubicación</p>
+                            <p className='pvalorDesc'>
+                                BlackMezas estará disponible en los mejores hoteles de la región.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         {/* Footer */}
         <footer className="footer test">
