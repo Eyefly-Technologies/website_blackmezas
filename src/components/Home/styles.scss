@@ -177,8 +177,8 @@ $desktop-breakpoint: 1024px;
     font-size: $font-size-web;
     line-height: $title-line-height-web;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 30px;
+    margin-top: 4.375rem;
+    margin-bottom: 1.875rem;
 }
 
 .columns.pvalor {
@@ -235,6 +235,12 @@ $desktop-breakpoint: 1024px;
         line-height: 2.34rem;
     }
 
+    /*
+    -----------------------------------
+        Una perspectiva continental
+    -----------------------------------
+    */
+
     .title.perspCon {
         font-size: 3.094rem;
         line-height: 3.953rem;
@@ -253,7 +259,11 @@ $desktop-breakpoint: 1024px;
         line-height: 2.563rem;
     }
 
-    // La formula correcta
+    /*
+    ------------------------------
+        La formula correcta
+    ------------------------------
+    */
     .hero-body.formCorrMobile {
         display: flex;
         flex-direction: column;
@@ -284,6 +294,33 @@ $desktop-breakpoint: 1024px;
     
     .columns.formCorrBottom {
         padding-top: 0rem;
+    }
+
+    /*
+    ----------------------------
+        Propuesta de valor
+    ----------------------------
+    */
+    .column.pvalor {
+        width: 23rem;
+        height: 19.75rem;
+    }
+
+    .title.pvalor {
+        font-size: $font-size-mobile;
+        line-height: $title-line-height-mobile;
+        text-align: left;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        margin-left: 3%;
+    }
+
+    .columns.pvalor {
+        gap: 1.5rem;
+    }
+
+    .columns.pvalor.top {
+        margin-bottom: 2.3rem;
     }
 }
 
