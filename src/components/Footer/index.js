@@ -15,9 +15,9 @@ const Footer = () => (
                 </p>
             </div>
             <div className='socialIcons'>
-                <img src={Instagram} alt='' width={30}/>
-                <img src={Youtube} alt='' width={30}/>
-                <img src={Facebook} alt='' width={30}/>
+                <img src={Instagram} alt='' width={30} className='instaIcon'/>
+                <img src={Youtube} alt='' width={30} className='youtubeIcon'/>
+                <img src={Facebook} alt='' width={30} className='faceIcon'/>
             </div>
         </div>
     </footer>
