@@ -1,7 +1,8 @@
 @import "~bulma/bulma";
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
 
 $primary: #0496FF;
+$gray: #535353;
 $black: #000000;
 $white: #FFFFFF;
 
@@ -38,6 +39,12 @@ $desktop-breakpoint: 1024px;
     text-align: center;
     margin-top: -4%;
 }
+
+/*
+-----------------------------------
+    Una perspectiva continental
+-----------------------------------
+*/
 
 .is-image {
     background-image: url($map);
@@ -228,6 +235,47 @@ $desktop-breakpoint: 1024px;
     margin-top: 1.875rem;
 }
  
+/*
+----------------
+    Footer
+----------------
+*/
+
+.footer.test{
+    height: 70px;
+    background-color: $gray;
+    margin: 0;
+    padding: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.footerContent {
+    height: 100%;
+    color: $white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 2%;
+}
+
+.arr {
+    padding-right: 460px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 7%;
+    
+}
+
 
 @media (max-width: $mobile-breakpoint) {
     .slogan {

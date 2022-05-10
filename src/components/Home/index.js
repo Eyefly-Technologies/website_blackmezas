@@ -8,6 +8,9 @@ import Schedule from './Schedule.svg';
 import Medal from './Medal.svg';
 import Wallet from './Wallet.svg';
 import Marker from './Marker.svg'
+import Instagram from './Instagram.svg';
+import Youtube from './YouTube.svg';
+import Facebook from './Facebook.svg';
 
 
 const Home = () => (
@@ -196,11 +199,18 @@ const Home = () => (
 
 
         {/* Footer */}
-        <footer className="footer test">
-            <div className="content has-text-centered">
-                <p>
-                    <strong>BlackMezas</strong> - © 2022 - All rights reserved
-                </p>
+        <footer className="footer test">  
+            <div className="content has-text-centered footerContent">
+                <div className='arr'>
+                    <p>
+                        BlackMezas<sup>®</sup> - © 2022 - All rights reserved
+                    </p>
+                </div>
+                <div className='socialIcons'>
+                    <img src={Instagram} alt='' width={30}/>
+                    <img src={Youtube} alt='' width={30}/>
+                    <img src={Facebook} alt='' width={30}/>
+                </div>
             </div>
         </footer>
     </div>
