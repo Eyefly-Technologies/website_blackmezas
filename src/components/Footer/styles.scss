@@ -1,0 +1,43 @@
+@import "~bulma/bulma";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
+
+$gray: #535353;
+$white: #FFFFFF;
+
+/*
+----------------
+    Footer
+----------------
+*/
+
+.footer.footCont{
+    height: 70px;
+    background-color: $gray;
+    margin: 0;
+    padding: 0;
+}
+
+.footerContent {
+    height: 100%;
+    color: $white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-right: 2%;
+}
+
+.arr {
+    padding-right: 28.75rem;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 7%;
+    
+}
