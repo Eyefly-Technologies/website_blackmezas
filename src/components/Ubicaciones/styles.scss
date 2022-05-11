@@ -13,6 +13,7 @@ $title-line-height-web: 5.75rem;
 $font-size-mobile: 3.094rem;
 $title-line-height-mobile: 3.953rem;
 
+$florida: './Florida.svg';
 
 $mobile-breakpoint: 768px;
 $tablet-min-breakpoint: 769px;
@@ -79,4 +80,37 @@ $desktop-breakpoint: 1024px;
 
 .columns.arg {
     padding-bottom: 80px;
+}
+
+.proximamente {
+    margin-top: 5%;
+    font-size: 34px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    left: 28.5%
+}
+
+.pais.florida:hover {
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 2;
+    left: 29%
+}
+
+.imgPais {
+    position: absolute;
+    width: 400px;
+}
+
+.imgPais.florida {
+    left: 23%;
+    top: 8%;
+}
+
+.imgPais.colombia {
+    left: 23%;
+    top: 25%;
 }
