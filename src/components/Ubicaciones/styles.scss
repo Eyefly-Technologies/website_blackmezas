@@ -92,10 +92,10 @@ $desktop-breakpoint: 1024px;
     left: 28.5%
 }
 
-.pais.florida:hover {
+.pais.florida:hover, .pais.colombia:hover {
     font-weight: 600;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.8);
-    position: fixed;
+    position:sticky;
     z-index: 2;
     left: 29%
 }

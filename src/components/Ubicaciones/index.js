@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
 
-import Florida from './Florida.svg';
-import Uruguay from './Uruguay.svg';
-import Colombia from './Colombia.svg';
-import Guatemala from './Guatemala.svg';
-import Argentina from './Argentina.svg';
+import Florida from './Florida.png';
+import Uruguay from './Uruguay.png';
+import Colombia from './Colombia.png';
+import Guatemala from './Guatemala.png';
+import Argentina from './Argentina.png';
 
 
 function Ubicaciones(){
@@ -51,7 +51,7 @@ function Ubicaciones(){
                     </div>
                     <div className="columns colgua">
                         <div className="column">
-                            <p className='pais' onMouseEnter={() => setIsShownColombia(true)} onMouseLeave={() => setIsShownColombia(false)}>Colombia</p>
+                            <p className='pais colombia' onMouseEnter={() => setIsShownColombia(true)} onMouseLeave={() => setIsShownColombia(false)}>Colombia</p>
                             {isShownColombia && (
                                 <div>
                                     <img src={Colombia} alt='' className='imgPais colombia'/>
