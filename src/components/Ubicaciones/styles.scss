@@ -1,0 +1,82 @@
+@import "~bulma/bulma";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
+
+$primary: #0496FF;
+$gray: #535353;
+$black: #000000;
+$white: #FFFFFF;
+
+$font-size-web: 4.5rem;
+$font-family-web: 'Lora';
+$title-line-height-web: 5.75rem;
+
+$font-size-mobile: 3.094rem;
+$title-line-height-mobile: 3.953rem;
+
+
+$mobile-breakpoint: 768px;
+$tablet-min-breakpoint: 769px;
+$tablet-max-breakpoint: 1023px;
+$desktop-breakpoint: 1024px;
+
+.ubicaciones{
+    width: 100%;
+    text-align: center;
+}
+
+.hero-body.ubicaciones {
+    position: relative;
+}
+
+.hero-body.two {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.ubicaciones {
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.title.ubicaciones {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 180px;
+    line-height: 250px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.paises {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns.flur {
+    display: grid;
+    gap: 220px;
+    // padding-top: 100px;
+    padding-bottom: 50px;
+    // background-color: #0496FF;
+}
+
+.columns.colgua {
+    display: grid;
+    gap: 130.03px;
+    // padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.columns.arg {
+    padding-bottom: 80px;
+}

@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './styles.css';
 
-import Home from '../Home';
+// import Home from '../Home';
+import Ubicaciones from '../Ubicaciones';
 
 function App() {
   return (
-    <Home/>
+    <Ubicaciones/>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
