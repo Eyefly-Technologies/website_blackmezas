@@ -1,12 +1,14 @@
 import './styles.css';
 
-// import Home from '../Home';
+import Home from '../Home';
 // import Ubicaciones from '../Ubicaciones';
-import Contactanos from '../Contactanos';
+// import Contactanos from '../Contactanos';
 
 function App() {
   return (
-    <Contactanos/>
+    <Home />
+    // <Contactanos/>
+    // <Ubicaciones/>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

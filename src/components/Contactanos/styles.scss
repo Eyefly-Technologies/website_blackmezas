@@ -41,8 +41,15 @@
 .form.container {
     background-color: #FFFFFF;
     border-radius: 12px;
+    width: 1061px;
 }
 
 .form.top {
     display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+
+.field, .control, .select {
+    width: 438px;
 }

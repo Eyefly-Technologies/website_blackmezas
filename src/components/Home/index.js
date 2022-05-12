@@ -1,10 +1,18 @@
 import React from 'react';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 import Footer from '../Footer'
 
 import logo from './logo.svg';
+import img1800_2018 from './1800-2018.png';
+import img2019 from './2019.png';
+import img2020 from './2020.png';
+import img2021 from './2021.png';
+import img2022 from './2022.png';
+
 import maskGroup from './MaskGroup.svg';
 import Schedule from './Schedule.svg';
 import Medal from './Medal.svg';
@@ -28,16 +36,26 @@ const Home = () => (
         </section>
 
         {/* Roadmap */}
-        <section className="hero is-white is-fullheight">
+        <section className="hero is-black is-fullheight">
             <div className="hero-body">
-                <div className="">
-                    <p className="title">
-                        Fullheight hero
-                    </p>
-                    <p className="subtitle">
-                        Fullheight subtitle
-                    </p>
-                </div>
+                {/* stoponhover */}
+                <Carousel autoPlay infiniteLoop showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} swipeable interval={4000}>
+                    <div>
+                        <img src={img1800_2018} alt='' />
+                    </div>
+                    <div>
+                        <img src={img2019} alt='' />
+                    </div>
+                    <div>
+                        <img src={img2020} alt='' />
+                    </div>
+                    <div>
+                        <img src={img2021} alt='' />
+                    </div>
+                    <div>
+                        <img src={img2022} alt='' />
+                    </div>
+                </Carousel>
             </div>
         </section>
 
