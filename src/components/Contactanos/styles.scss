@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
+
+.footerCon {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.hero-body.contactanos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactanos.titles {
+    text-align: center;
+    width: 100%;
+}
+
+.title.contactanos {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.subtitle.contactanos {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.form.container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.form.top {
+    display: flex;
+}

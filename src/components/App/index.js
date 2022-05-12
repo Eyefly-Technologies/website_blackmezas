@@ -1,11 +1,12 @@
 import './styles.css';
 
 // import Home from '../Home';
-import Ubicaciones from '../Ubicaciones';
+// import Ubicaciones from '../Ubicaciones';
+import Contactanos from '../Contactanos';
 
 function App() {
   return (
-    <Ubicaciones/>
+    <Contactanos/>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
