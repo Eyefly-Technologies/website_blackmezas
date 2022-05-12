@@ -37,26 +37,23 @@ const Home = () => (
 
         {/* Roadmap */}
         <section className="hero is-black is-fullheight">
-            <div className="hero-body">
-                {/* stoponhover */}
-                <Carousel autoPlay infiniteLoop showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} swipeable interval={4000}>
-                    <div>
-                        <img src={img1800_2018} alt='' />
-                    </div>
-                    <div>
-                        <img src={img2019} alt='' />
-                    </div>
-                    <div>
-                        <img src={img2020} alt='' />
-                    </div>
-                    <div>
-                        <img src={img2021} alt='' />
-                    </div>
-                    <div>
-                        <img src={img2022} alt='' />
-                    </div>
-                </Carousel>
-            </div>
+            <Carousel autoPlay infiniteLoop showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} interval={4000} emulateTouch autoFocus={false} stopOnHover={false}>
+                <div>
+                    <img src={img1800_2018} alt='' />
+                </div>
+                <div>
+                    <img src={img2019} alt='' />
+                </div>
+                <div>
+                    <img src={img2020} alt='' />
+                </div>
+                <div>
+                    <img src={img2021} alt='' />
+                </div>
+                <div>
+                    <img src={img2022} alt='' />
+                </div>
+            </Carousel>
         </section>
 
         {/* Perspectiva continental */}
