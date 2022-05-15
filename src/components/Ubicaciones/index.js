@@ -18,7 +18,7 @@ function Ubicaciones(){
 
     return(
         <div>
-            <section className="hero is-fullheight">
+            <section className="hero is-fullheight paises">
                 <div className="hero-body ubicaciones">
                     <div className="ubicaciones">
                         <p className="title ubicaciones">
