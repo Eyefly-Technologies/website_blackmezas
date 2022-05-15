@@ -1,14 +1,14 @@
 import './styles.css';
 
-import Home from '../Home';
-// import Ubicaciones from '../Ubicaciones';
+// import Home from '../Home';
+import Ubicaciones from '../Ubicaciones';
 // import Contactanos from '../Contactanos';
 
 function App() {
   return (
-    <Home />
+    // <Home />
     // <Contactanos/>
-    // <Ubicaciones/>
+    <Ubicaciones/>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

@@ -69,6 +69,7 @@ $desktop-breakpoint: 1024px;
     // padding-top: 100px;
     padding-bottom: 50px;
     // background-color: #0496FF;
+    // position: absolute;
 }
 
 .columns.colgua {
@@ -83,21 +84,21 @@ $desktop-breakpoint: 1024px;
 }
 
 .proximamente {
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 34px;
     font-family: 'Avenir Next';
     font-style: normal;
     font-weight: 600;
     position: absolute;
-    left: 28.5%
+    // left: 28.5%
 }
 
-.pais.florida:hover, .pais.colombia:hover {
+.pais.florida:hover, .pais.colombia:hover, .pais.uruguay:hover {
     font-weight: 600;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.8);
     position:sticky;
     z-index: 2;
-    left: 29%
+    // left: 29%
 }
 
 .imgPais {
@@ -105,13 +106,19 @@ $desktop-breakpoint: 1024px;
     width: 400px;
 }
 
-.imgPais.florida {
-    left: 23%;
-    top: 8%;
-}
+// .imgPais.florida {
+//     left: 23%;
+//     top: 8%;
+// }
 
 .imgPais.colombia {
     // left: 25rem;
     left: 23%;
     top: 25%;
+}
+
+.column.testc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

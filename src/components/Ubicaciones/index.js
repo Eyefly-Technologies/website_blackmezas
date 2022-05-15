@@ -30,22 +30,22 @@ function Ubicaciones(){
                 </div>
                 <div className='paises'>
                     <div className="columns flur">
-                        <div className="column">
+                        <div className="column testc">
                             <p className='pais florida' onMouseEnter={() => setIsShownFlorida(true)} onMouseLeave={() => setIsShownFlorida(false)}>Florida</p>
                             {isShownFlorida && (
-                                <div>
+                                <>
                                     <img src={Florida} alt='' className='imgPais florida'/>
                                     <p className='proximamente'>Próximamente</p>
-                                </div>
+                                </>
                             )}
                         </div>
-                        <div className="column">
-                            <p className='pais' onMouseEnter={() => setIsShownUruguay(true)} onMouseLeave={() => setIsShownUruguay(false)}>Uruguay</p>
+                        <div className="column testc">
+                            <p className='pais uruguay' onMouseEnter={() => setIsShownUruguay(true)} onMouseLeave={() => setIsShownUruguay(false)}>Uruguay</p>
                             {isShownUruguay && (
-                                <div>
+                                <>
                                     <img src={Uruguay} alt='' className='imgPais uruguay'/>
                                     <p className='proximamente'>Próximamente</p>
-                                </div>
+                                </>
                             )}
                         </div>
                     </div>
