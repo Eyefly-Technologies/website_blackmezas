@@ -30,7 +30,7 @@ function Ubicaciones(){
                 </div>
                 <div className='paises'>
                     <div className="columns flur">
-                        <div className="column testc">
+                        <div className="column cHover">
                             <p className='pais florida' onMouseEnter={() => setIsShownFlorida(true)} onMouseLeave={() => setIsShownFlorida(false)}>Florida</p>
                             {isShownFlorida && (
                                 <>
@@ -39,7 +39,7 @@ function Ubicaciones(){
                                 </>
                             )}
                         </div>
-                        <div className="column testc">
+                        <div className="column cHover">
                             <p className='pais uruguay' onMouseEnter={() => setIsShownUruguay(true)} onMouseLeave={() => setIsShownUruguay(false)}>Uruguay</p>
                             {isShownUruguay && (
                                 <>
@@ -50,33 +50,33 @@ function Ubicaciones(){
                         </div>
                     </div>
                     <div className="columns colgua">
-                        <div className="column">
+                        <div className="column cHover">
                             <p className='pais colombia' onMouseEnter={() => setIsShownColombia(true)} onMouseLeave={() => setIsShownColombia(false)}>Colombia</p>
                             {isShownColombia && (
-                                <div>
+                                <>
                                     <img src={Colombia} alt='' className='imgPais colombia'/>
                                     <p className='proximamente'>Próximamente</p>
-                                </div>
+                                </>
                             )}
                         </div>
-                        <div className="column">
-                            <p className='pais' onMouseEnter={() => setIsShownGuatemala(true)} onMouseLeave={() => setIsShownGuatemala(false)}>Guatemala</p>
+                        <div className="column cHover">
+                            <p className='pais guatemala' onMouseEnter={() => setIsShownGuatemala(true)} onMouseLeave={() => setIsShownGuatemala(false)}>Guatemala</p>
                             {isShownGuatemala && (
-                                <div>
+                                <>
                                     <img src={Guatemala} alt='' className='imgPais guatemala'/>
                                     <p className='proximamente'>Próximamente</p>
-                                </div>
+                                </>
                             )}
                         </div>
                     </div>
                     <div className="columns arg">
-                        <div className="column">
-                            <p className='pais' onMouseEnter={() => setIsShownArgentina(true)} onMouseLeave={() => setIsShownArgentina(false)}>Argentina</p>
+                        <div className="column cHover">
+                            <p className='pais argentina' onMouseEnter={() => setIsShownArgentina(true)} onMouseLeave={() => setIsShownArgentina(false)}>Argentina</p>
                             {isShownArgentina && (
-                                <div>
+                                <>
                                     <img src={Argentina} alt='' className='imgPais argentina'/>
                                     <p className='proximamente'>Próximamente</p>
-                                </div>
+                                </>
                             )}
                         </div>
                     </div>

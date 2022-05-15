@@ -93,7 +93,11 @@ $desktop-breakpoint: 1024px;
     // left: 28.5%
 }
 
-.pais.florida:hover, .pais.colombia:hover, .pais.uruguay:hover {
+.pais.florida:hover,
+.pais.colombia:hover,
+.pais.uruguay:hover,
+.pais.guatemala:hover,
+.pais.argentina:hover {
     font-weight: 600;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.8);
     position:sticky;
@@ -106,18 +110,7 @@ $desktop-breakpoint: 1024px;
     width: 400px;
 }
 
-// .imgPais.florida {
-//     left: 23%;
-//     top: 8%;
-// }
-
-.imgPais.colombia {
-    // left: 25rem;
-    left: 23%;
-    top: 25%;
-}
-
-.column.testc{
+.column.cHover{
     display: flex;
     justify-content: center;
     align-items: center;
