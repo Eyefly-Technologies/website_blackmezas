@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import Footer from '../Footer'
