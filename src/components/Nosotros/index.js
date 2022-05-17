@@ -3,6 +3,13 @@ import './styles.scss';
 import 'bulma/css/bulma.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import MeetingRoom from './meetingRoom.png';
+import HotDesking from './businessTime.png';
+import Flag from './Flag.png';
+import InternetSpeed from './InternetSpeed.png';
+import Communication from './Communication.png';
+import VirtualOffice from './VideoConference.png';
+
 import Diploma from './Diploma.png';
 import Marker from './Marker.png';
 
@@ -12,13 +19,69 @@ import Footer from '../Footer'
 const Nosotros = () => (
     <>
         {/* Acerca de nosotros */}
-        <section className="hero is-black is-fullheight">
+        <section className="hero is-primary is-fullheight">
 
         </section>
 
         {/* Por que BlackMezas */}
-        <section className="hero is-primary is-fullheight">
-            
+        <section className="hero is-black is-fullheight">
+            <div className="hero-body pqBM">
+                <div className='pqBM props'>
+                    <div className='columns pqbmTop'>
+                        <div className='column '>
+                            <div className='pqBM prop'>
+                                <img src={MeetingRoom} alt='' />
+                                <p className='pqBM prop desc'>Múltiples espacios de reunión</p>
+                            </div>
+                        </div>
+                        <div className='column '>
+                            <div className='pqBM prop'>                            
+                                <img src={HotDesking} alt='' />
+                                <p className='pqBM prop desc'>HotDesking disponible</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='columns pqbmCenter'>
+                        <div className='column '>
+                            <div className='pqBM prop'>
+                                <img src={Flag} alt='' />
+                                <p className='pqBM prop desc'>Múltiples países</p>
+                            </div>
+                        </div>
+                        <div className='column '>
+                            <div className='pqBM prop'>                            
+                                <img src={InternetSpeed} alt='' />
+                                <p className='pqBM prop desc'> Internet de primera gama</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='columns pqbmBottom'>
+                        <div className='column '>
+                            <div className='pqBM prop'>
+                                <img src={Communication} alt='' />
+                                <p className='pqBM prop desc'>Servicios de recepción</p>
+                            </div>
+                        </div>
+                        <div className='column '>
+                            <div className='pqBM prop'>                            
+                                <img src={VirtualOffice} alt='' />
+                                <p className='pqBM prop desc'>Oficinas virtuales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='pqBM pce'>
+                    <div className='sectionTitle pqbm'>
+                        <p className='nosotros qaportamos'>¿Por qué Blackmezas?</p>
+                        <div className='line pqbm'></div>
+                    </div>
+                    <p className='pceTitle'>Premium Coworking Environments</p>
+                    <p className='pceDesc'>Nuestros centros cuentan con beneficios de primer orden.</p>
+                </div>
+            </div>
         </section>
 
         {/* Nuestras instalaciones */}

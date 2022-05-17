@@ -18,6 +18,75 @@ $desktop-breakpoint: 1024px;
     bottom: 0;
 }
 
+/* 
+---------------------------
+    ¿Por que BlackMezas
+---------------------------
+ */ 
+.hero-body.pqBM{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pqBM.prop {
+    display: flex;
+    align-items: center;
+}
+
+.pqBM.prop.desc {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+    width: 200px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.pqBM.pce{
+    background-color: $primary;
+    width: 48%;
+    padding: 77.34px 128.4px 243px 75.91px;
+}
+
+.pceTitle {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 8%;
+}
+
+.pceDesc {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.line.pqbm {
+    background-color: $white;
+    width: 4.563rem;
+    height: 0.125rem;
+    margin-top: 2.5%;
+}
+
+.sectionTitle.pqbm {
+    margin-bottom: 2%;
+}
+
+.columns.pqbmTop, .columns.pqbmCenter {
+    padding-bottom: 20%;
+}
+
 
 /* 
 ----------------------
