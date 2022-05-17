@@ -30,13 +30,13 @@ const Nosotros = () => (
                     <div className='columns pqbmTop'>
                         <div className='column '>
                             <div className='pqBM prop'>
-                                <img src={MeetingRoom} alt='' />
+                                <img src={MeetingRoom} alt='' className='icnPQBM'/>
                                 <p className='pqBM prop desc'>Múltiples espacios de reunión</p>
                             </div>
                         </div>
                         <div className='column '>
                             <div className='pqBM prop'>                            
-                                <img src={HotDesking} alt='' />
+                                <img src={HotDesking} alt='' className='icnPQBM'/>
                                 <p className='pqBM prop desc'>HotDesking disponible</p>
                             </div>
                         </div>
@@ -45,13 +45,13 @@ const Nosotros = () => (
                     <div className='columns pqbmCenter'>
                         <div className='column '>
                             <div className='pqBM prop'>
-                                <img src={Flag} alt='' />
+                                <img src={Flag} alt='' className='icnPQBM'/>
                                 <p className='pqBM prop desc'>Múltiples países</p>
                             </div>
                         </div>
                         <div className='column '>
                             <div className='pqBM prop'>                            
-                                <img src={InternetSpeed} alt='' />
+                                <img src={InternetSpeed} alt='' className='icnPQBM'/>
                                 <p className='pqBM prop desc'> Internet de primera gama</p>
                             </div>
                         </div>
@@ -60,13 +60,13 @@ const Nosotros = () => (
                     <div className='columns pqbmBottom'>
                         <div className='column '>
                             <div className='pqBM prop'>
-                                <img src={Communication} alt='' />
+                                <img src={Communication} alt='' className='icnPQBM'/>
                                 <p className='pqBM prop desc'>Servicios de recepción</p>
                             </div>
                         </div>
                         <div className='column '>
                             <div className='pqBM prop'>                            
-                                <img src={VirtualOffice} alt='' />
+                                <img src={VirtualOffice} alt='' className='icnPQBM'/>
                                 <p className='pqBM prop desc'>Oficinas virtuales</p>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const Nosotros = () => (
 
                 <div className='pqBM pce'>
                     <div className='sectionTitle pqbm'>
-                        <p className='nosotros qaportamos'>¿Por qué Blackmezas?</p>
+                        <p className='pqbm pcs'>¿Por qué Blackmezas?</p>
                         <div className='line pqbm'></div>
                     </div>
                     <p className='pceTitle'>Premium Coworking Environments</p>

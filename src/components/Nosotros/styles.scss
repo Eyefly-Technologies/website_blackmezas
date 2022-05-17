@@ -37,10 +37,10 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     color: $white;
-    width: 200px;
+    width: 12.5rem;
     text-align: left;
     margin-left: 5%;
 }
@@ -48,16 +48,16 @@ $desktop-breakpoint: 1024px;
 .pqBM.pce{
     background-color: $primary;
     width: 48%;
-    padding: 77.34px 128.4px 243px 75.91px;
+    padding: 4.834rem 8.025rem 15.188rem 4.744rem;
 }
 
 .pceTitle {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 58px;
-    color: #FFFFFF;
+    font-size: 2.813rem;
+    line-height: 3.625rem;
+    color: $white;
     text-align: left;
     margin-bottom: 8%;
 }
@@ -66,9 +66,9 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
+    color: $white;
     text-align: left;
 }
 
@@ -85,6 +85,17 @@ $desktop-breakpoint: 1024px;
 
 .columns.pqbmTop, .columns.pqbmCenter {
     padding-bottom: 20%;
+}
+
+.pqbm.pcs {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
+    color: $white;
+    margin-bottom: 2%;
+    margin-right: 1%;
 }
 
 
@@ -171,6 +182,70 @@ $desktop-breakpoint: 1024px;
 
 @media (max-width: $mobile-breakpoint) {
     /* 
+    ---------------------------
+        ¿Por que BlackMezas
+    ---------------------------
+    */ 
+    .hero-body.pqBM{
+        flex-direction: column-reverse;
+    }
+
+    .pqBM.pce{
+        width: 95%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
+    .line.pqbm {
+        width: 0rem;
+    }
+
+    .pceTitle {
+        font-size: 2.3rem;
+        line-height: 3rem;
+        text-align: center;
+        margin-bottom: 8%;
+    }
+
+    .pceDesc {
+        font-size: 1.14rem;
+        line-height: 1.875rem;
+        text-align: center;
+    }
+
+    .columns.pqbmTop, .columns.pqbmCenter {
+        padding-bottom: 5%;
+    }
+
+    .pqbm.pcs {
+        font-size: 1.2rem;
+        margin-bottom: 4%;
+        margin-right: 0%;
+    }
+
+    .pqBM.prop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pqBM.prop.desc {
+        font-size: 1.14rem;
+        line-height: 1.625rem;
+        width: 12.5rem;
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .icnPQBM {
+        width: 2.5rem;
+    }
+
+    /* 
     ----------------------
         Que aportamos
     ----------------------
@@ -181,7 +256,6 @@ $desktop-breakpoint: 1024px;
     }
 
     .nosotros.qaportamos {
-        // font-size: 1.2rem;
         font-size: 1.2rem;
         margin-right: 5%;
     }
