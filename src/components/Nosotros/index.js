@@ -28,6 +28,13 @@ const Nosotros = () => (
 
         {/* Que aportamos */}
         <section className="hero is-black is-fullheight">
+            <div className="hero-head qaportamos">
+                <div className='sectionTitle'>
+                    <p className='nosotros qaportamos'>Nosotros</p>
+                    <div className='line'></div>
+                </div>
+                <p className='qAportamos qaportamos'>¿Qué aportamos?</p>
+            </div>
             <div className="hero-body">
                 <div className='container has-text-centered'>
                     <div className='columns qaportamos'>

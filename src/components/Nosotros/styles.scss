@@ -11,30 +11,35 @@ $white: #FFFFFF;
     bottom: 0;
 }
 
+
+/* 
+----------------------
+    Que aportamos
+----------------------
+ */ 
 .columns.qaportamos {
     display: grid;
-    gap: 85px;
+    gap: 5.313rem;
     color: #000000;
 }
 
 .column.qaportamos {
     background-color: $white;
-    border-radius: 10px;
-    height: 401px;
+    border-radius: 0.625rem;
+    height: 25.063rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // padding-top: 5%;
 }
 
 .qaportamosTitle {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 33px;
-    letter-spacing: 0.1px;
+    font-size: 2.188rem;
+    line-height: 2.063rem;
+    letter-spacing: 0.006rem;
     padding-bottom: 8%;
 
 }
@@ -43,13 +48,48 @@ $white: #FFFFFF;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 27px;
-    letter-spacing: 0.2px;
+    font-size: 1.563rem;
+    line-height: 1.688rem;
+    letter-spacing: 0.013rem;
     color: #5C5C5C;
 }
 
 .contQaportamos {
-    // width: 460px;
     width: 75%;
+}
+
+.hero-head.qaportamos {
+    margin-left: 10%;
+    padding-top: 6%;
+}
+
+.nosotros.qaportamos {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
+    color: $white;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
+
+.qAportamos.qaportamos {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 4.813rem;
+    color: $white;
+}
+
+.line {
+    background-color: $white;
+    width: 4.563rem;
+    height: 0.125rem;
+    margin-top: 1%;
+}
+
+.sectionTitle {
+    display: flex;
 }
