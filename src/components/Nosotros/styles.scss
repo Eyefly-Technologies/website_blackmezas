@@ -5,6 +5,13 @@ $gray: #535353;
 $black: #000000;
 $white: #FFFFFF;
 
+$font-size-mobile: 3.094rem;
+
+$mobile-breakpoint: 768px;
+$tablet-min-breakpoint: 769px;
+$tablet-max-breakpoint: 1023px;
+$desktop-breakpoint: 1024px;
+
 .footerCon {
     position: fixed;
     width: 100%;
@@ -41,7 +48,6 @@ $white: #FFFFFF;
     line-height: 2.063rem;
     letter-spacing: 0.006rem;
     padding-bottom: 8%;
-
 }
 
 .qaportamosDesc {
@@ -92,4 +98,65 @@ $white: #FFFFFF;
 
 .sectionTitle {
     display: flex;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    /* 
+    ----------------------
+        Que aportamos
+    ----------------------
+    */ 
+    .qAportamos.qaportamos {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .nosotros.qaportamos {
+        // font-size: 1.2rem;
+        font-size: 1.2rem;
+        margin-right: 5%;
+    }
+
+    .line {
+        margin-top: 10%;
+        width: 0%;
+    }
+
+    .hero-head.qaportamos {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columns.qaportamos {
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column.qaportamos {
+        width: 85%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+
+    .qaportamosTitle {
+        font-size: 1.6rem;
+        line-height: 2.063rem;
+        letter-spacing: 0.006rem;
+        padding-bottom: 8%;
+    }
+    
+    .qaportamosDesc {
+        font-size: 1.14rem;
+        line-height: 1.688rem;
+        letter-spacing: 0.013rem;
+        color: #5C5C5C;
+    }
+
+    .iconQaportamos {
+        width: 3.125rem;
+    }
 }

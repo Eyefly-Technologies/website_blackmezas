@@ -40,7 +40,7 @@ const Nosotros = () => (
                     <div className='columns qaportamos'>
                         <div className='column qaportamos'>
                             <div className='contQaportamos'>
-                                <img src={Diploma} alt='' />
+                                <img src={Diploma} alt='' className='iconQaportamos' />
                                 <p className='qaportamosTitle'>Experiencia</p>
                                 <p className='qaportamosDesc'>
                                     Tenemos más de 60 años de experiencia combinada en desarrollos inmobiliarios 
@@ -50,7 +50,7 @@ const Nosotros = () => (
                         </div>
                         <div className='column qaportamos'>
                             <div className='contQaportamos'>
-                                <img src={Marker} alt='' />
+                                <img src={Marker} alt='' className='iconQaportamos' />
                                 <p className='qaportamosTitle'>Referencia</p>
                                 <p className='qaportamosDesc'>
                                     BlackMezas® posee experiencia en varios países de LATAM, 
