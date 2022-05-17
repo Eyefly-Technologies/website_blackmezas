@@ -10,6 +10,8 @@ import InternetSpeed from './InternetSpeed.png';
 import Communication from './Communication.png';
 import VirtualOffice from './VideoConference.png';
 
+import Pattern from './Pattern.png';
+
 import Diploma from './Diploma.png';
 import Marker from './Marker.png';
 
@@ -133,9 +135,23 @@ const Nosotros = () => (
 
         {/* Contactanos */}
         <section className="hero is-black is-fullheight">
-            {/* <div className='footerCon'>
+            <div className="hero-body">
+                <div className='contactanos left'>
+                    <div className='sectionTitle'>
+                        <p className='contactanosSub'>Contáctanos</p>
+                        <div className='line contactanos'></div>
+                    </div>
+                    <p className='titleContactanos'>¡Queremos oír de ti!</p>
+                    <p className='descContactanos'>No dude en contactarnos y  le responderemos en la brevedad posible.</p>
+                    <button className='button contactanos'>Contactános</button>
+                </div>
+                <div>
+                    <img src={Pattern} alt='' />
+                </div>
+            </div>
+            <div className='footerCon'>
                 <Footer/>
-            </div> */}
+            </div>
         </section>
 
     </>
