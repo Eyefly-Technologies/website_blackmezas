@@ -135,7 +135,7 @@ const Nosotros = () => (
 
         {/* Contactanos */}
         <section className="hero is-black is-fullheight">
-            <div className="hero-body">
+            <div className="hero-body contactanos">
                 <div className='contactanos left'>
                     <div className='sectionTitle'>
                         <p className='contactanosSub'>Contáctanos</p>
@@ -145,13 +145,11 @@ const Nosotros = () => (
                     <p className='descContactanos'>No dude en contactarnos y  le responderemos en la brevedad posible.</p>
                     <button className='button contactanos'>Contactános</button>
                 </div>
-                <div>
+                <div className='patternDiv'>
                     <img src={Pattern} alt='' />
                 </div>
             </div>
-            <div className='footerCon'>
-                <Footer/>
-            </div>
+            <Footer/>
         </section>
 
     </>

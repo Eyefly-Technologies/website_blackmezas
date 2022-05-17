@@ -184,8 +184,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 51px;
+    font-size: 2.5rem;
+    line-height: 3.188rem;
     color: $white;
     margin-bottom: 15%;
 }
@@ -194,8 +194,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
     color: $white;
     margin-bottom: 10%;
 }
@@ -207,13 +207,13 @@ $desktop-breakpoint: 1024px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 35px 114px;
+    padding: 2.188rem 7.125rem;
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: $white;
 }
 
@@ -366,4 +366,44 @@ $desktop-breakpoint: 1024px;
     .iconQaportamos {
         width: 3.125rem;
     }
+
+    /* 
+    --------------------
+        Contactanos
+    --------------------
+    */
+    .contactanos.left {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleContactanos {
+        font-size: 2.5rem;
+        margin-bottom: 15%;
+        text-align: center;
+    }
+
+    .descContactanos {
+        font-size: 1.14rem;
+        text-align: center;
+    }
+
+    .line.contactanos {
+        width: 0rem;
+    }
+
+    .contactanosSub {
+        font-size: 1.2rem;
+        margin-bottom: 3%;
+        margin-right: 0%;
+    }
+
+    .patternDiv{
+        display: none;
+    }
+
 }
