@@ -60,7 +60,7 @@ const Home = () => (
         <section className="hero is-image is-fullheight">
             <div className="hero-head">
                 <p className="title perspCon">
-                    Una perspectiva continental
+                    Una perspectiva continental!
                 </p>
             </div>
             <div className="hero-body">
