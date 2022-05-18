@@ -133,8 +133,9 @@ $desktop-breakpoint: 1024px;
     flex-direction: row;
     align-items: center;
     justify-content:flex-start;
+    text-align: left;
     padding: 2rem 1rem;
-    width: 293px;
+    width: 240px;
 
     font-family: 'Lato';
     font-style: normal;
@@ -142,21 +143,20 @@ $desktop-breakpoint: 1024px;
     font-size: 1.125rem;
     line-height: 1.75rem;
     color: $black;
-    // background-color: $primary;
+    outline: none;
 }
-
-// .button.instalaciones:focus {
-//     background-color: $primary;
-//     color: $white;
-//     border: 0;
-//     outline: none;
-// }
 
 button.instalacionesActive {
     background-color: $primary;
     color: $white;
     border: 0;
     outline: none;
+}
+
+.btns.nInstalaciones {
+    margin-left: 13%;
+    margin-top: -20.8%;
+    margin-right: 5%;
 }
 
 
