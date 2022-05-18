@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -24,35 +24,54 @@ import Footer from '../Footer'
 
 
 const Nosotros = () => {
-    const [isParqueoActive, setIsParqueoActive] = useState(false);
+    const [isParqueoActive, setIsParqueoActive] = useState(true);
     const [isCafeteriaActive, setIsCafeteriaActive] = useState(false);
     const [isArquitecturaActive, setIsArquitecturaActive] = useState(false);
     const [isEspaciosActive, setIsEspaciosActive] = useState(false);
+
+    const inputRefParqueo = useRef(null);
+    const inputRefEspacios = useRef(null);
+    const inputRefCafeteria = useRef(null);
+    const inputRefArquitectura = useRef(null);
 
     function parqueoHandler() {
         setIsParqueoActive(true);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
+        inputRefParqueo.current.focus();
     }
     function espaciosHandler() {
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(true);
+        inputRefEspacios.current.focus();
     }
     function cafeteriaHandler() {
         setIsParqueoActive(false);
         setIsCafeteriaActive(true);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
+        inputRefCafeteria.current.focus();
     }
     function arquitecturaHandler() {
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(true);
         setIsEspaciosActive(false);
+        inputRefArquitectura.current.focus();
     }
+    
+    
+    
+
+    useEffect(() => {
+        if (isParqueoActive) {
+            inputRefParqueo.current.focus();
+        }
+    }, []);
+
     return (
         <>
             {/* Acerca de nosotros */}
@@ -132,10 +151,10 @@ const Nosotros = () => {
                 </div>
                 <div className="hero-body">
                     <div>
-                        <button className='button instalaciones' onClick={parqueoHandler}>Parqueo in-situ</button>
-                        <button className='button instalaciones' onClick={espaciosHandler}>Espacios confortables</button>
-                        <button className='button instalaciones' onClick={cafeteriaHandler}>Cafetería</button>
-                        <button className='button instalaciones' onClick={arquitecturaHandler}>Arquitectura de primera línea</button>
+                        <button className='button instalaciones' onClick={parqueoHandler} ref={inputRefParqueo}>Parqueo in-situ</button>
+                        <button className='button instalaciones' onClick={espaciosHandler} ref={inputRefEspacios}>Espacios confortables</button>
+                        <button className='button instalaciones' onClick={cafeteriaHandler} ref={inputRefCafeteria}>Cafetería</button>
+                        <button className='button instalaciones' onClick={arquitecturaHandler} ref={inputRefArquitectura}>Arquitectura de primera línea</button>
                     </div>
                     <div>
                         {isParqueoActive && <img src={Parqueo} alt=''/>}
