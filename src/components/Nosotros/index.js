@@ -39,38 +39,56 @@ const Nosotros = () => {
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
-        inputRefParqueo.current.focus();
+        // inputRefParqueo.current.focus();
+
+
+        clearTimeout()
+        setTimeout(() => {
+            espaciosHandler()
+        }, 3000);
     }
     function espaciosHandler() {
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(true);
-        inputRefEspacios.current.focus();
+        // inputRefEspacios.current.focus();
+        clearTimeout()
+        setTimeout(() => {
+            cafeteriaHandler()
+        }, 3000);
     }
     function cafeteriaHandler() {
         setIsParqueoActive(false);
         setIsCafeteriaActive(true);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
-        inputRefCafeteria.current.focus();
+        // inputRefCafeteria.current.focus();
+        clearTimeout()
+        setTimeout(() => {
+            arquitecturaHandler()
+        }, 3000);
     }
     function arquitecturaHandler() {
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(true);
         setIsEspaciosActive(false);
-        inputRefArquitectura.current.focus();
+        // inputRefArquitectura.current.focus();
+        clearTimeout()
+        setTimeout(() => {
+            parqueoHandler()
+        }, 3000);
     }
-    
-    
     
 
     useEffect(() => {
         if (isParqueoActive) {
             inputRefParqueo.current.focus();
         }
-    }, []);
+    }, [isParqueoActive]);
+
+    
 
     return (
         <>
