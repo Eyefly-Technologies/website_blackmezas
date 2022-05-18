@@ -93,12 +93,71 @@ $desktop-breakpoint: 1024px;
     margin-right: 1%;
 }
 
+/* 
+-------------------------------
+    Nuestras instalaciones
+-------------------------------
+*/ 
+.nInstalacionesSub {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
+    color: #0D304A;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
+
+.line.nInstalaciones {
+    background-color: #0D304A;
+    width: 4.563rem;
+    height: 0.125rem;
+    margin-top: 1%;
+}
+
+.nIntalacionesTitle {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 4.813rem;
+    color: #0D304A;
+    width: 70%;
+}
+
+.button.instalaciones {
+    border: 0 solid;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 2rem 1rem;
+    width: 293px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: $black;
+    // background-color: $primary;
+}
+
+.button.instalaciones:focus {
+    background-color: $primary;
+    color: $white;
+    border: 0;
+    outline: none;
+}
+
 
 /* 
 ----------------------
     Que aportamos
 ----------------------
- */ 
+*/ 
 .columns.qaportamos {
     display: grid;
     gap: 5.313rem;
