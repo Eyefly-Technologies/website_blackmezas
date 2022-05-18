@@ -248,6 +248,9 @@ $desktop-breakpoint: 1024px;
         Una perspectiva continental
     -----------------------------------
     */
+    .hero-body {
+        overflow: hidden;
+    }
 
     .title.perspCon {
         font-size: 3.094rem;
@@ -257,7 +260,8 @@ $desktop-breakpoint: 1024px;
 
     .column.persCon {
         height: 32.6rem;
-        width: 22.875rem;
+        // width: 22.875rem;
+        width: 22rem;
         color: $white;
         background-color: $black;
         font-family: 'Lora';
@@ -265,6 +269,13 @@ $desktop-breakpoint: 1024px;
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 2.563rem;
+    }
+
+    .container.perspCon {
+        background-color: #0496FF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /*
