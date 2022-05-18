@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/website_blackmezas/static/css/main.8792d2b1.css",
+    "main.js": "/website_blackmezas/static/js/main.52341449.js",
+    "static/js/787.f40d1deb.chunk.js": "/website_blackmezas/static/js/787.f40d1deb.chunk.js",
+    "static/media/map.svg": "/website_blackmezas/static/media/map.0a2c7558caf6c5bbc9cc.svg",
+    "static/media/2021.png": "/website_blackmezas/static/media/2021.874b07ef8963c09aa4a9.png",
+    "static/media/2020.png": "/website_blackmezas/static/media/2020.04736fb981b2fd96d170.png",
+    "static/media/2022.png": "/website_blackmezas/static/media/2022.b408a319af50fa5f6ebf.png",
+    "static/media/1800-2018.png": "/website_blackmezas/static/media/1800-2018.ed50729a1c02a19d520f.png",
+    "static/media/2019.png": "/website_blackmezas/static/media/2019.cc28be3f62ed592c0701.png",
+    "static/media/logo.svg": "/website_blackmezas/static/media/logo.c9062d2f35c1e0e3dbbd32b15d28400f.svg",
+    "static/media/Instagram.svg": "/website_blackmezas/static/media/Instagram.64c7acdc915d7a463f38bfb76711db08.svg",
+    "static/media/MaskGroup.svg": "/website_blackmezas/static/media/MaskGroup.27bc81676bfb4e565ebbc50ffceb9123.svg",
+    "static/media/Schedule.svg": "/website_blackmezas/static/media/Schedule.75fb99393b19cb1eb74d4b17f5be08c5.svg",
+    "static/media/Wallet.svg": "/website_blackmezas/static/media/Wallet.d16b6376ce0b51745bd18f6ebed09b58.svg",
+    "static/media/Medal.svg": "/website_blackmezas/static/media/Medal.c08199d70dd4e0c8281b2db31a7da7c2.svg",
+    "static/media/Facebook.svg": "/website_blackmezas/static/media/Facebook.35c01512cd033b3e731e2771713540c4.svg",
+    "static/media/YouTube.svg": "/website_blackmezas/static/media/YouTube.b74230e081428e0c6137fa7bc80a28ca.svg",
+    "index.html": "/website_blackmezas/index.html",
+    "static/media/Marker.svg": "/website_blackmezas/static/media/Marker.d1215e8905a44de021ec3a1bb99af715.svg",
+    "main.8792d2b1.css.map": "/website_blackmezas/static/css/main.8792d2b1.css.map",
+    "main.52341449.js.map": "/website_blackmezas/static/js/main.52341449.js.map",
+    "787.f40d1deb.chunk.js.map": "/website_blackmezas/static/js/787.f40d1deb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8792d2b1.css",
+    "static/js/main.52341449.js"
+  ]
+}
