@@ -126,7 +126,7 @@ $desktop-breakpoint: 1024px;
     width: 70%;
 }
 
-.button.instalaciones {
+.button.instalaciones, button.instalacionesActive {
     border: 0 solid;
     border-radius: 0;
     display: flex;
@@ -145,7 +145,14 @@ $desktop-breakpoint: 1024px;
     // background-color: $primary;
 }
 
-.button.instalaciones:focus {
+// .button.instalaciones:focus {
+//     background-color: $primary;
+//     color: $white;
+//     border: 0;
+//     outline: none;
+// }
+
+button.instalacionesActive {
     background-color: $primary;
     color: $white;
     border: 0;

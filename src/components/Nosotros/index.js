@@ -42,10 +42,10 @@ const Nosotros = () => {
         // inputRefParqueo.current.focus();
 
 
-        clearTimeout()
-        setTimeout(() => {
-            espaciosHandler()
-        }, 3000);
+        // clearTimeout()
+        // setTimeout(() => {
+        //     espaciosHandler()
+        // }, 3000);
     }
     function espaciosHandler() {
         setIsParqueoActive(false);
@@ -53,10 +53,10 @@ const Nosotros = () => {
         setIsArquitecturaActive(false);
         setIsEspaciosActive(true);
         // inputRefEspacios.current.focus();
-        clearTimeout()
-        setTimeout(() => {
-            cafeteriaHandler()
-        }, 3000);
+        // clearTimeout()
+        // setTimeout(() => {
+        //     cafeteriaHandler()
+        // }, 3000);
     }
     function cafeteriaHandler() {
         setIsParqueoActive(false);
@@ -64,10 +64,10 @@ const Nosotros = () => {
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
         // inputRefCafeteria.current.focus();
-        clearTimeout()
-        setTimeout(() => {
-            arquitecturaHandler()
-        }, 3000);
+        // clearTimeout()
+        // setTimeout(() => {
+        //     arquitecturaHandler()
+        // }, 3000);
     }
     function arquitecturaHandler() {
         setIsParqueoActive(false);
@@ -75,18 +75,18 @@ const Nosotros = () => {
         setIsArquitecturaActive(true);
         setIsEspaciosActive(false);
         // inputRefArquitectura.current.focus();
-        clearTimeout()
-        setTimeout(() => {
-            parqueoHandler()
-        }, 3000);
+        // clearTimeout()
+        // setTimeout(() => {
+        //     parqueoHandler()
+        // }, 3000);
     }
     
 
-    useEffect(() => {
-        if (isParqueoActive) {
-            inputRefParqueo.current.focus();
-        }
-    }, [isParqueoActive]);
+    // useEffect(() => {
+    //     if (isParqueoActive) {
+    //         inputRefParqueo.current.focus();
+    //     }
+    // }, [isParqueoActive]);
 
     
 
@@ -169,10 +169,10 @@ const Nosotros = () => {
                 </div>
                 <div className="hero-body">
                     <div>
-                        <button className='button instalaciones' onClick={parqueoHandler} ref={inputRefParqueo}>Parqueo in-situ</button>
-                        <button className='button instalaciones' onClick={espaciosHandler} ref={inputRefEspacios}>Espacios confortables</button>
-                        <button className='button instalaciones' onClick={cafeteriaHandler} ref={inputRefCafeteria}>Cafetería</button>
-                        <button className='button instalaciones' onClick={arquitecturaHandler} ref={inputRefArquitectura}>Arquitectura de primera línea</button>
+                        <button className={isParqueoActive ? 'button instalacionesActive': 'button instalaciones'} onClick={parqueoHandler} ref={inputRefParqueo}>Parqueo in-situ</button>
+                        <button className={isEspaciosActive ? 'button instalacionesActive': 'button instalaciones'} onClick={espaciosHandler} ref={inputRefEspacios}>Espacios confortables</button>
+                        <button className={isCafeteriaActive ? 'button instalacionesActive': 'button instalaciones'} onClick={cafeteriaHandler} ref={inputRefCafeteria}>Cafetería</button>
+                        <button className={isArquitecturaActive ? 'button instalacionesActive': 'button instalaciones'} onClick={arquitecturaHandler} ref={inputRefArquitectura}>Arquitectura de primera línea</button>
                     </div>
                     <div>
                         {isParqueoActive && <img src={Parqueo} alt=''/>}
