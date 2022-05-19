@@ -3,6 +3,12 @@ import './styles.scss';
 import 'bulma/css/bulma.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import Nosotros1 from './nosotros1.png';
+import Nosotros2 from './nosotros2.png';
+import Nosotros3 from './nosotros3.png';
+import Nosotros4 from './nosotros4.png';
+import Nosotros5 from './nosotros5.png';
+
 import MeetingRoom from './meetingRoom.png';
 import HotDesking from './businessTime.png';
 import Flag from './Flag.png';
@@ -35,47 +41,45 @@ const Nosotros = () => {
     const inputRefArquitectura = useRef(null);
 
     function parqueoHandler() {
+        // clearTimeout()
         setIsParqueoActive(true);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
-        // inputRefParqueo.current.focus();
 
-
-        // clearTimeout()
         // setTimeout(() => {
         //     espaciosHandler()
         // }, 3000);
     }
     function espaciosHandler() {
+        // clearTimeout()
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(true);
-        // inputRefEspacios.current.focus();
-        // clearTimeout()
+
         // setTimeout(() => {
         //     cafeteriaHandler()
         // }, 3000);
     }
     function cafeteriaHandler() {
+        // clearTimeout()
         setIsParqueoActive(false);
         setIsCafeteriaActive(true);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
-        // inputRefCafeteria.current.focus();
-        // clearTimeout()
+
         // setTimeout(() => {
         //     arquitecturaHandler()
         // }, 3000);
     }
     function arquitecturaHandler() {
+        // clearTimeout()
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(true);
-        // setIsEspaciosActive(false);
-        // inputRefArquitectura.current.focus();
-        // clearTimeout()
+        setIsEspaciosActive(false);
+
         // setTimeout(() => {
         //     parqueoHandler()
         // }, 3000);
@@ -93,8 +97,25 @@ const Nosotros = () => {
     return (
         <>
             {/* Acerca de nosotros */}
-            <section className="hero is-primary is-fullheight">
-
+            <section className="hero is-black is-fullheight">
+                <div className="hero-head aNosotros">
+                    <div className='sectionTitle'>
+                        <p className='aNosotrosSub'>Acerca de nosotros</p>
+                        <div className='line aNosotros'></div>
+                    </div>
+                    <p className='aNosotrosTitle'>Creemos en el valor de la excelencia</p>
+                </div>
+                <div className='hero-body aNosotrosContainer'>
+                    <div className='topImages'>
+                        <img src={Nosotros1} alt='' />
+                        <img src={Nosotros3} alt='' />
+                        <img src={Nosotros5} alt='' />
+                    </div>
+                    <div className='bottomImages'>
+                        <img src={Nosotros2} alt='' />
+                        <img src={Nosotros4} alt='' />
+                    </div>
+                </div>
             </section>
 
             {/* Por que BlackMezas */}
