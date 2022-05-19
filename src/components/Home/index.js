@@ -70,10 +70,10 @@ const Home = () => {
             >
                 <div className='menu'>
                     <ul>
-                        <li class="is-active">Home</li>
-                        <li><Link to="nosotros">Nosotros</Link></li>
+                        <li className='is-active'>Home</li>
+                        <li><Link to="nosotros" className='linkTo'>Nosotros</Link></li>
                         <li>Asociarse</li>
-                        <li><Link to="ubicaciones">Ubicaciones</Link></li>
+                        <li><Link to="ubicaciones" className='linkTo'> Ubicaciones</Link></li>
                         <li>Contáctanos</li>
                     </ul>
                 </div>
