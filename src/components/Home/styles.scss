@@ -21,6 +21,13 @@ $tablet-max-breakpoint: 1023px;
 $desktop-breakpoint: 1024px;
 
 
+.hamburger {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 2;
+}
+
 .is-black {
     background-color: $black;
 }
