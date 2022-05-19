@@ -302,13 +302,13 @@ $desktop-breakpoint: 1024px;
         Menu
     -------------
     */
-    ul {
+    .ulItem {
         font-size: 2.813rem;
         flex-direction: column;
         height: 55%;
     }
     
-    li::after {
+    .liItem::after {
         content: "";
     }
     
