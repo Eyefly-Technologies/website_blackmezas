@@ -107,13 +107,13 @@ const Nosotros = () => {
                 </div>
                 <div className='hero-body aNosotrosContainer'>
                     <div className='topImages'>
-                        <img src={Nosotros1} alt='' />
-                        <img src={Nosotros3} alt='' />
-                        <img src={Nosotros5} alt='' />
+                        <img src={Nosotros1} alt='' className='imgAnosotros topImg' />
+                        <img src={Nosotros3} alt='' className='imgAnosotros' />
+                        <img src={Nosotros5} alt='' className='imgAnosotros hid' />
                     </div>
                     <div className='bottomImages'>
-                        <img src={Nosotros2} alt='' />
-                        <img src={Nosotros4} alt='' />
+                        <img src={Nosotros2} alt='' className='imgAnosotros topImg'/>
+                        <img src={Nosotros4} alt='' className='imgAnosotros'/>
                     </div>
                 </div>
             </section>

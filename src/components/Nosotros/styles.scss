@@ -19,7 +19,6 @@ $desktop-breakpoint: 1024px;
 ---------------------------
 */
 .hero-head.aNosotros {
-    // background-color: aqua;
     padding-left: 3%;
     padding-top: 5%;
 }
@@ -28,8 +27,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 52px;
-    line-height: 67px;
+    font-size: 3.25rem;
+    line-height: 4.188rem;
     color: $white;
     width: 40%;
 }
@@ -38,8 +37,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
     color: $white;
 }
 
@@ -358,7 +357,6 @@ button.instalacionesActive {
     margin-top: 2.5%;
 }
 
-
 .contactanos.left {
     width: 33.7%;
     margin-left: 7%;
@@ -373,6 +371,65 @@ button.instalacionesActive {
 
 
 @media (max-width: $mobile-breakpoint) {
+    /* 
+    ---------------------------
+        Acerca de nosotros
+    ---------------------------
+    */
+    .hero-head.aNosotros {
+        padding-left: 0%;
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .aNosotrosTitle {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .aNosotrosSub {
+        font-size: 1.2rem;
+    }
+    
+    
+    .line.aNosotros {
+        display: none;
+    }
+    
+    .aNosotrosContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: -15%;
+    }
+    
+    .topImages {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bottomImages {
+        margin-top: 25%;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .imgAnosotros {
+        width: 90%;
+    }
+
+    .topImg {
+        margin-bottom: 10%;
+    }
+
+    .hid {
+        display: none;
+    }
     /* 
     ---------------------------
         ¿Por que BlackMezas
