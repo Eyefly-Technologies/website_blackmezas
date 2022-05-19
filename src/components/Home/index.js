@@ -67,8 +67,14 @@ const Home = () => {
                 contentLabel="Menu"
                 style={modalStyles}
             >
-                <div>
-                    <p>HOLA</p>
+                <div className='menu'>
+                    <ul>
+                        <li class="is-active">Home</li>
+                        <li>Nosotros</li>
+                        <li>Asociarse</li>
+                        <li>Ubicaciones</li>
+                        <li>Contáctanos</li>
+                    </ul>
                 </div>
             </Modal>
         </div>

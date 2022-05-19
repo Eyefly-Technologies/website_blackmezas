@@ -20,6 +20,14 @@ $tablet-min-breakpoint: 769px;
 $tablet-max-breakpoint: 1023px;
 $desktop-breakpoint: 1024px;
 
+// $breadcrumb-item-active-color: $primary;
+
+
+/*
+-------------
+    Menu
+-------------
+*/
 
 .hamburger {
     position: fixed;
@@ -27,6 +35,54 @@ $desktop-breakpoint: 1024px;
     top: 5%;
     z-index: 2;
 }
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    // background-color: aquamarine;
+    
+}
+
+ul {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 82px;
+    text-align: center;
+    color: $white;
+
+    display: flex;
+    justify-content: space-evenly;
+    // background-color: antiquewhite;
+    width: 93%;
+}
+
+.is-active {
+    color: $primary;
+    font-weight: 700;
+}
+
+li::after {
+    content: " /";
+    color: $white;
+    font-weight: 500;
+}
+
+li:last-child:after {
+    content: "";
+}
+
+
+
+// -----
 
 .is-black {
     background-color: $black;
