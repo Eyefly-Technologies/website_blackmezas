@@ -43,7 +43,7 @@ $desktop-breakpoint: 1024px;
     align-items: center;
 }
 
-ul {
+.ulItem {
     font-family: 'Avenir Next';
     font-style: normal;
     font-weight: 500;
@@ -62,13 +62,13 @@ ul {
     font-weight: 700;
 }
 
-li::after {
+.liItem::after {
     content: " /";
     color: $white;
     font-weight: 500;
 }
 
-li:last-child:after {
+.liItem:last-child:after {
     content: "";
 }
 
