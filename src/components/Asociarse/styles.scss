@@ -1,1 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;500;700&family=Poppins:wght@500;700&family=Rubik:wght@500&display=swap');
 
+$primary: #0496FF;
+$gray: #535353;
+$black: #000000;
+$white: #FFFFFF;
+
+$mobile-breakpoint: 768px;
+$tablet-min-breakpoint: 769px;
+$tablet-max-breakpoint: 1023px;
+$desktop-breakpoint: 1024px;
+
+
+.carouselAsociarse{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.blurAsociarse {
+    position: absolute;
+    width: 58.5%;
+    height: 69.813rem;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.blurContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    height: 100%;
+    padding: 8% 10%;
+}
+
+.asociarseText {
+    text-align: left;
+    margin-bottom: 15%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // background-color: #dbdb41;
+}
+
+.beneficioTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.beneficioText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.375rem;
+    color: #FFFFFF;
+}
+
+.beneficioDesc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.875rem;
+    color: #FFFFFF;
+    padding-top: 8%;
+}
+
+.button.contactanos.asociarse {
+    background-color: $primary;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.188rem 4rem;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: $white;
+}
+
+.logoAsociarse {
+    width: 25%;
+    margin-bottom: 10%;
+}
+
+.numberSlide {
+    position: absolute;
+    width: 1.688rem;
+    height: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 95.813rem;
+    top: 25rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.activeSlide {
+    display: flex;
+}
+
+.numberActive {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.activeLine {
+    position: absolute;
+    left: 180%;
+    top: 6%;
+    width: 7.5rem;
+    height: 0px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+}
+
+.asociarseButtons {
+    position: absolute;
+    bottom: 10%;
+    right: 4% ;
+}
+
+.btnBack, .btnNext {
+    background-color: transparent;
+    border: 0;
+}
+// .imgTest {
+//     height: 100%;
+//     opacity: 0.5;
+// }

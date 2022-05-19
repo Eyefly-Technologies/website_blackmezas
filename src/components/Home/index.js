@@ -72,7 +72,7 @@ const Home = () => {
                     <ul className='ulItem'>
                         <li className='is-active liItem'>Home</li>
                         <li className='liItem'><Link to="nosotros" className='linkTo'>Nosotros</Link></li>
-                        <li className='liItem'>Asociarse</li>
+                        <li className='liItem'><Link to="asociarse" className='linkTo'>Asociarse</Link></li>
                         <li className='liItem'><Link to="ubicaciones" className='linkTo'> Ubicaciones</Link></li>
                         <li className='liItem'>Contáctanos</li>
                     </ul>
