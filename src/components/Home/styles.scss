@@ -43,25 +43,17 @@ $desktop-breakpoint: 1024px;
     align-items: center;
 }
 
-.breadcrumb {
-    margin: 0;
-    padding: 0;
-    // background-color: aquamarine;
-    
-}
-
 ul {
     font-family: 'Avenir Next';
     font-style: normal;
     font-weight: 500;
-    font-size: 60px;
-    line-height: 82px;
+    font-size: 3.75rem;
+    line-height: 5.125rem;
     text-align: center;
     color: $white;
 
     display: flex;
     justify-content: space-evenly;
-    // background-color: antiquewhite;
     width: 93%;
 }
 
@@ -301,6 +293,23 @@ li:last-child:after {
 
 
 @media (max-width: $mobile-breakpoint) {
+    /*
+    -------------
+        Menu
+    -------------
+    */
+    ul {
+        font-size: 2.813rem;
+        flex-direction: column;
+        height: 55%;
+    }
+    
+    li::after {
+        content: "";
+    }
+    
+    // -------
+
     .slogan {
         font-size: 2rem;
         line-height: 2.34rem;
