@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from 'react';
 import './styles.css';
 
 import Home from '../Home';
@@ -8,6 +9,9 @@ import Asociarse from '../Asociarse';
 import Nosotros from '../Nosotros';
 
 function App() {
+  useEffect(() => {
+    document.title = "BlackMezas"
+  }, []);
   return (
     <Router>
       <Routes>
