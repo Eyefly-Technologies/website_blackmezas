@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -70,9 +71,9 @@ const Home = () => {
                 <div className='menu'>
                     <ul>
                         <li class="is-active">Home</li>
-                        <li>Nosotros</li>
+                        <li><Link to="nosotros">Nosotros</Link></li>
                         <li>Asociarse</li>
-                        <li>Ubicaciones</li>
+                        <li><Link to="ubicaciones">Ubicaciones</Link></li>
                         <li>Contáctanos</li>
                     </ul>
                 </div>
