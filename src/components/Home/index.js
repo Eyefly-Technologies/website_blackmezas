@@ -67,6 +67,7 @@ const Home = () => {
                 onRequestClose={() => setIsOpen(false)}
                 contentLabel="Menu"
                 style={modalStyles}
+                ariaHideApp={false}
             >
                 <div className='menu'>
                     <ul className='ulItem'>
