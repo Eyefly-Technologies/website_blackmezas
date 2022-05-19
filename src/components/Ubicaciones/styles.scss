@@ -68,12 +68,14 @@ $desktop-breakpoint: 1024px;
 }
 
 .columns.flur {
-    display: grid;
+    // display: grid;
+    display: inline-flex;
     gap: 13.438rem;
 }
 
 .columns.colgua {
-    display: grid;
+    // display: grid;
+    display: inline-flex;
     gap: 8.127rem;
 }
 
