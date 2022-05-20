@@ -5,9 +5,12 @@ import 'bulma/css/bulma.min.css';
 import Footer from '../Footer'
 
 
-const Contactanos = () => (
+
+
+const Contactanos = () => {
+    return (
     <section className="hero is-black is-fullheight">
-        <div className="hero-body contactanos">
+        <div className="hero-body contactanosSD">
             <div className='contactanos titles'>
                 <p className='title contactanos'>Contáctanos</p>
                 <p className='subtitle contactanos'>¡Queremos oír de tí!</p>
@@ -39,7 +42,7 @@ const Contactanos = () => (
                         <div class="control">
                             <div class="select">
                                 <select>
-                                    <option>Seleccione una opción</option>
+                                    <option>Información</option>
                                     <option>Asociarse</option>
                                 </select>
                             </div>
@@ -54,6 +57,9 @@ const Contactanos = () => (
                         </div>
                     </div>
                 </div>
+                <div>
+                    <button className='button contactanos asociarse'>Enviar mensaje</button>
+                </div>
             </div>
 
         </div>
@@ -63,5 +69,6 @@ const Contactanos = () => (
         </div>
     </section>
 )
+}
 
 export default(Contactanos);

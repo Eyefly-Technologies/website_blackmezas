@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@500&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;500;700&family=Poppins:wght@500;700&family=Rubik:wght@500&display=swap');
+
+$primary: #0496FF;
+$gray: #535353;
+$black: #000000;
+$white: #FFFFFF;
+
+$mobile-breakpoint: 768px;
+$tablet-min-breakpoint: 769px;
+$tablet-max-breakpoint: 1023px;
+$desktop-breakpoint: 1024px;
+
 
 .footerCon {
     position: fixed;
@@ -6,7 +17,7 @@
     bottom: 0;
 }
 
-.hero-body.contactanos {
+.hero-body.contactanosSD {
     display: flex;
     flex-direction: column;
 }
@@ -50,6 +61,28 @@
     justify-content:space-evenly;
 }
 
-.field, .control, .select {
+.button.envMensaje {
+    background-color: $primary;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.188rem 4rem;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: $white;
+}
+
+
+.field, .control, .select, .option {
     width: 438px;
+}
+
+.option {
+    background-color: aqua;
 }

@@ -107,7 +107,7 @@ const Asociarse = () => (
                                 <p className='beneficioText'>Rentabilidad</p>
                                 <p className='beneficioDesc'>exponenciada en activos inmovilizados.</p>
                             </div>
-                            <button className='button contactanos asociarse'>Contactános</button>
+                            <button className='button envMensaje'>Contactános</button>
                         </div>
                     </div>
                     <div className='numberSlide'>
