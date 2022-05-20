@@ -16,10 +16,10 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/nosotros" element={<Nosotros />} />
-        <Route path="/asociarse" element={<Asociarse />} />
-        <Route path="/ubicaciones" element={<Ubicaciones />} />
-        <Route path="/contactanos" element={<Contactanos />} />
+        <Route exact path="/nosotros" element={<Nosotros />} />
+        <Route exact path="/asociarse" element={<Asociarse />} />
+        <Route exact path="/ubicaciones" element={<Ubicaciones />} />
+        <Route exact path="/contactanos" element={<Contactanos />} />
       </Routes>
     </Router>
   );
