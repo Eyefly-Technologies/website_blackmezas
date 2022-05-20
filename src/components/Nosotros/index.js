@@ -256,7 +256,7 @@ const Nosotros = () => {
                             <p className='contactanosSub'>Contáctanos</p>
                             <div className='line contactanos'></div>
                         </div>
-                        <p className='titleContactanos'>¡Queremos oír de ti!</p>
+                        <p className='titleContactanos'>¡Queremos escuchar de ti!</p>
                         <p className='descContactanos'>No dude en contactarnos y  le responderemos en la brevedad posible.</p>
                         <button className='button contactanos'>Contactános</button>
                     </div>
