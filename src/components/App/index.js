@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom";
 import React, { useEffect } from 'react';
 import './styles.css';
 
@@ -13,15 +13,15 @@ function App() {
     document.title = "BlackMezas"
   }, []);
   return (
-    <Router>
-      <Routes>
+    <HashRouter>
+      <Routes basename="/">
         <Route exact path="/" element={<Home />} />
         <Route exact path="/nosotros" element={<Nosotros />} />
         <Route exact path="/asociarse" element={<Asociarse />} />
         <Route exact path="/ubicaciones" element={<Ubicaciones />} />
         <Route exact path="/contactanos" element={<Contactanos />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
