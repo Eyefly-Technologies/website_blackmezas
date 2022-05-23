@@ -155,7 +155,7 @@ const Home = () => {
                                 </div>
                                 <div className='persCon-aligment'>
                                     <p>
-                                        Las empresas han aprendido a ahorrar como consecuencias del COVID-19 y van a asegurarse que este ahorro siga.
+                                        Las empresas han aprendido a ahorrar como consecuencia del COVID-19 y van a asegurarse que este ahorro siga.
                                     </p>
                                 </div>
                             </div>
@@ -241,7 +241,7 @@ const Home = () => {
                             <img src={Medal} alt='' className='imgMedal'/>
                             <p className='pvalorTit'>Exclusividad</p>
                             <p className='pvalorDesc'>
-                                Tendremos las mejores instalaciones y nuestros clientes serán parte de un selecto club, lleno de beneficios.
+                                Las mejores instalaciones para nuestros clientes, con su inclusión a un selecto club lleno de beneficios.
                             </p>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ const Home = () => {
                             <img src={Wallet} alt=''/>
                             <p className='pvalorTit'>Value for money</p>
                             <p className='pvalorDesc'>
-                                En BlackMezas todo está incluido; desde café hasta horas estipuladas de reunión.
+                                En BlackMezas® todo está incluido; desde café hasta horas estipuladas de reunión.
                             </p>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ const Home = () => {
                             <img src={Marker} alt='' className='imgMarker'/>
                             <p className='pvalorTit'>Ubicación</p>
                             <p className='pvalorDesc'>
-                                BlackMezas estará disponible en los mejores hoteles de la región.
+                                BlackMezas® estará disponible en las mejores ubicaciones y hoteles de la región.
                             </p>
                         </div>
                     </div>
