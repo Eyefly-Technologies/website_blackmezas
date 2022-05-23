@@ -23,8 +23,10 @@ $desktop-breakpoint: 1024px;
 }
 
 .contactanos.titles {
+    margin-top: 3%;
     text-align: center;
     width: 100%;
+    margin-bottom: 3%;
 }
 
 .title.contactanos {
@@ -49,22 +51,34 @@ $desktop-breakpoint: 1024px;
     opacity: 0.7;
 }
 
-.form.container {
+.form.containerF {
     background-color: #FFFFFF;
     border-radius: 12px;
-    width: 1061px;
+    width: 63vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2% 5%;
 }
 
 .form.top {
     display: flex;
     width: 100%;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
+
+.form.bottom {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
 
 .button.envMensaje {
     background-color: $primary;
     border: 0;
-    border-radius: 0;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,11 +92,23 @@ $desktop-breakpoint: 1024px;
     color: $white;
 }
 
-
-.field, .control, .select, .option {
-    width: 438px;
+.field, .selectElement {
+    // width: 438px;
+    width: 25.5vw;
 }
 
-.option {
-    background-color: aqua;
+.input, .selectElement {
+    padding: 5% 2%;
+}
+
+.field.message_ {
+    width: 100%;
+}
+
+.label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
 }
