@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import Carousel from "react-simply-carousel";
 import { Link } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import Modal from 'react-modal';
@@ -30,6 +30,11 @@ import Pattern from './Pattern.png';
 import Diploma from './Diploma.png';
 import Marker from './Marker.png';
 
+import GF1 from './GF1.png';
+import GF2 from './GF2.png';
+import GF3 from './GF3.png';
+import GF4 from './GF4.png';
+
 import Footer from '../Footer'
 
 
@@ -52,6 +57,8 @@ const Nosotros = () => {
     const [isCafeteriaActive, setIsCafeteriaActive] = useState(false);
     const [isArquitecturaActive, setIsArquitecturaActive] = useState(false);
     const [isEspaciosActive, setIsEspaciosActive] = useState(false);
+
+    const [activeSlide, setActiveSlide] = useState(0);
 
     const inputRefParqueo = useRef(null);
     const inputRefEspacios = useRef(null);
@@ -305,8 +312,79 @@ const Nosotros = () => {
             </section>
 
             {/* Galeria de fotos */}
-            <section className="hero is-white is-fullheight">
-                
+            <section className="hero is-white is-fullheight photoGallery">
+                <div className="hero-head galeriaFotos">
+                    <div className='sectionTitle'>
+                        <p className='nInstalacionesSub'>Galería de fotos</p>
+                        <div className='line pGallery'></div>
+                    </div>
+                    <p className='pGalleryTitle'>Tu futuro espacio de trabajo</p>
+                </div>
+                <div className='photoGalleryContainer'>
+                    <Carousel
+                        updateOnItemClick
+                        // autoplay
+                        // delay={800}
+                        containerProps={{
+                        style: {
+                            width: "100%",
+                            justifyContent: "space-between",
+                        }
+                        }}
+                        activeSlideIndex={activeSlide}
+                        activeSlideProps={{
+                            style: {
+                                width: "35vw",
+                                height: "43vw",
+                            }
+                        }}
+                        itemsListProps={{
+                            style: {
+                                display: 'flex',
+                                alignItems: "flex-end",
+                            
+    
+                            }
+                        }}
+                        onRequestChange={setActiveSlide}
+                        forwardBtnProps={{
+                        children: ">",
+                        style: {
+                            width: 60,
+                            height: 60,
+                            minWidth: 60,
+                            alignSelf: "center"
+                        }
+                        }}
+                        backwardBtnProps={{
+                        children: "<",
+                        style: {
+                            width: 60,
+                            height: 60,
+                            minWidth: 60,
+                            alignSelf: "center"
+                        }
+                        }}
+                        itemsToShow={3}
+                        speed={800}
+                    >
+                        <div className='nonActiveItem'>
+                            <img src={GF1} alt='' className='imgPhotoGallery'/>
+                        </div>
+                        <div className='nonActiveItem'>
+                            <img src={GF2} alt='' className='imgPhotoGallery'/>
+                        </div>
+                        <div className='nonActiveItem'>
+                            <img src={GF3} alt='' className='imgPhotoGallery'/>
+                        </div>
+                        <div className='nonActiveItem'>
+                            <img src={GF4} alt='' className='imgPhotoGallery'/>
+                        </div>
+                        {/* <div className='nonActiveItem'>
+                            <img src={GF4} alt='' className='imgPhotoGallery'/>
+                        </div> */}
+                    </Carousel>
+                </div>
             </section>
 
             {/* Contactanos */}

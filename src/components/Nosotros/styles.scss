@@ -302,6 +302,60 @@ button.instalacionesActive {
 }
 
 /* 
+-------------------------
+    Galeria de fotos
+-------------------------
+*/
+
+.hero.photoGallery{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-head.galeriaFotos {
+    position:absolute;
+    right: 17vw;
+    z-index: 2;
+    // margin-left: 43%; 
+    margin-top: -30%;
+}
+
+.pGalleryTitle {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.813rem;
+    color: #0D304A;
+}
+
+.line.pGallery {
+    background-color: #0D304A;
+    width: 4.563rem;
+    height: 0.125rem;
+    margin-top: 2%;
+}
+
+.photoGalleryContainer {
+    margin-top: 5%;
+}
+
+.nonActiveItem {
+    width: 26vw;
+    height: 26vw;
+    // border: 30px solid white;
+    border-left: 30px solid $white;
+    border-right: 30px solid $white;
+}
+
+.imgPhotoGallery {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 
 --------------------
     Contactanos
 --------------------
