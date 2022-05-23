@@ -94,7 +94,7 @@ const Asociarse = () => {
                                         <img src={Logo} alt=''/>
                                     </div>
                                     <div className='asociarseText'>
-                                        <p className='beneficioTitle'>Beneficios de nuestro modelo</p>
+                                        <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
                                         <p className='beneficioText'>Ocupación</p>
                                         <p className='beneficioDesc'>de espacios superfluos en el hotel.</p>
                                     </div>
@@ -117,7 +117,7 @@ const Asociarse = () => {
                                         <img src={Logo} alt=''/>
                                     </div>
                                     <div className='asociarseText'>
-                                        <p className='beneficioTitle'>Beneficios de nuestro modelo</p>
+                                        <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
                                         <p className='beneficioText'>Clientela</p>
                                         <p className='beneficioDesc'>que incide en su actividad hotelera.</p>
                                     </div>
@@ -140,7 +140,7 @@ const Asociarse = () => {
                                         <img src={Logo} alt=''/>
                                     </div>
                                     <div className='asociarseText'>
-                                        <p className='beneficioTitle'>Beneficios de nuestro modelo</p>
+                                        <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
                                         <p className='beneficioText'>Diversificación</p>
                                         <p className='beneficioDesc'>de riesgo hotelero inherente.</p>
                                     </div>
@@ -163,7 +163,7 @@ const Asociarse = () => {
                                         <img src={Logo} alt=''/>
                                     </div>
                                     <div className='asociarseText'>
-                                        <p className='beneficioTitle'>Beneficios de nuestro modelo</p>
+                                        <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
                                         <p className='beneficioText'>Rentabilidad</p>
                                         <p className='beneficioDesc'>exponenciada en activos inmovilizados.</p>
                                     </div>
