@@ -284,7 +284,7 @@ const Nosotros = () => {
                                     <img src={Diploma} alt='' className='iconQaportamos' />
                                     <p className='qaportamosTitle'>Experiencia</p>
                                     <p className='qaportamosDesc'>
-                                        Tenemos más de 60 años de experiencia combinada en desarrollos inmobiliarios 
+                                        Tenemos más de 60 años de actividad combinada en desarrollos inmobiliarios 
                                         residenciales y comerciales, así como productos y servicios relacionados.
                                     </p>
                                 </div>
@@ -294,7 +294,7 @@ const Nosotros = () => {
                                     <img src={Marker} alt='' className='iconQaportamos' />
                                     <p className='qaportamosTitle'>Referencia</p>
                                     <p className='qaportamosDesc'>
-                                        BlackMezas® posee experiencia en varios países de LATAM, 
+                                        BlackMezas® posee trayectoria en varios países de LATAM, 
                                         de Europa y en Estados Unidos.
                                     </p>
                                 </div>
@@ -317,9 +317,9 @@ const Nosotros = () => {
                             <p className='contactanosSub'>Contáctanos</p>
                             <div className='line contactanos'></div>
                         </div>
-                        <p className='titleContactanos'>¡Queremos escuchar de ti!</p>
+                        <p className='titleContactanos'>¡Queremos saber de ti!</p>
                         <p className='descContactanos'>No dude en contactarnos y  le responderemos en la brevedad posible.</p>
-                        <button className='button contactanos'>Contactános</button>
+                        <Link to="../contactanos" className='linkTo'><button className='button contactanos'>Contactános</button></Link>
                     </div>
                     <div className='patternDiv'>
                         <img src={Pattern} alt='' />
