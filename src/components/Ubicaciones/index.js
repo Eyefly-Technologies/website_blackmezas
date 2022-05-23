@@ -122,7 +122,6 @@ function Ubicaciones(){
                             {isShownGuatemala && (
                                 <>
                                     <img src={Guatemala} alt='' className='imgPais guatemala'/>
-                                    <p className='proximamente'>Próximamente</p>
                                 </>
                             )}
                         </div>
