@@ -3,6 +3,10 @@ import './styles.scss';
 import 'bulma/css/bulma.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import { Link } from 'react-router-dom';
+import { Twirl as Hamburger } from 'hamburger-react';
+import Modal from 'react-modal';
+
 import Nosotros1 from './nosotros1.png';
 import Nosotros2 from './nosotros2.png';
 import Nosotros3 from './nosotros3.png';
@@ -27,6 +31,20 @@ import Diploma from './Diploma.png';
 import Marker from './Marker.png';
 
 import Footer from '../Footer'
+
+
+const modalStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      margin: 0,
+      padding: 0,
+      height: '101%',
+      width: '101%',
+      backgroundColor: 'black'
+    },
+};
 
 
 const Nosotros = () => {
@@ -92,10 +110,53 @@ const Nosotros = () => {
     //     }
     // }, [isParqueoActive]);
 
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
     
 
     return (
         <>
+            {/* Menu */}
+            <div className='hamburger'>
+                <Hamburger
+                    color={"#FFFFFF"} 
+                    onToggle={ 
+                        toggled => {
+                            if (toggled) {
+                                openModal()
+                            } else {
+                                closeModal()
+                            }
+                        }
+                    } style={{color: 'red'}} />
+
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={() => setIsOpen(false)}
+                    contentLabel="Menu"
+                    style={modalStyles}
+                    ariaHideApp={false}
+                >
+                    <div className='menu'>
+                        <ul className='ulItem'>
+                            <li className='liItem'><Link to="/" className='linkTo'>Home</Link></li>
+                            <li className='is-active liItem'>Nosotros</li>
+                            <li className='liItem'><Link to="../asociarse" className='linkTo'>Asociarse</Link></li>
+                            <li className='liItem'><Link to="../ubicaciones" className='linkTo'>Ubicaciones</Link></li>
+                            <li className='liItem'><Link to="../contactanos" className='linkTo'>Contáctanos</Link></li>
+                        </ul>
+                    </div>
+                </Modal>
+            </div>
+
             {/* Acerca de nosotros */}
             <section className="hero is-black is-fullheight">
                 <div className="hero-head aNosotros">

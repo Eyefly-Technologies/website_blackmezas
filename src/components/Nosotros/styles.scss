@@ -13,6 +13,64 @@ $tablet-max-breakpoint: 1023px;
 $desktop-breakpoint: 1024px;
 
 
+/*
+-------------
+    Menu
+-------------
+*/
+
+.hamburger {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 2;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulItem {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.58vw;
+    line-height: 5.125rem;
+    text-align: center;
+    color: $white;
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 93%;
+}
+
+.is-active {
+    color: $primary;
+    font-weight: 700;
+}
+
+.liItem::after {
+    content: " /";
+    color: $white;
+    font-weight: 500;
+}
+
+.liItem:last-child:after {
+    content: "";
+}
+
+.linkTo {
+    color: $white;
+}
+
+
+
+// -----
+
+
 /* 
 ---------------------------
     Acerca de nosotros

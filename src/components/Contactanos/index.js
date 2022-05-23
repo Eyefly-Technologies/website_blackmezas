@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './styles.scss';
 import 'bulma/css/bulma.min.css';
 
+import { Link } from 'react-router-dom';
+import { Twirl as Hamburger } from 'hamburger-react';
+import Modal from 'react-modal';
 import emailjs from 'emailjs-com';
 
 import Footer from '../Footer'
@@ -10,10 +13,6 @@ import Footer from '../Footer'
 const serviceId = "service_6g1uzjy";
 const templateId = "template_1rwxo5a";
 const userId = "EqWT88oV6h-MugGKM";
-
-
-
-
 
 
 const useInput = (initialValue) => {
@@ -30,6 +29,20 @@ const useInput = (initialValue) => {
 
     return {value, onchange:handleChange, onsubmit:handleSubmit};
 }
+
+
+const modalStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      margin: 0,
+      padding: 0,
+      height: '101%',
+      width: '101%',
+      backgroundColor: 'black'
+    },
+};
 
 
 const Contactanos = () => {
@@ -61,8 +74,49 @@ const Contactanos = () => {
         
     };
 
+    const [modalIsOpen, setIsOpen] = useState(false);
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
     return (
         <section className="hero is-black is-fullheight">
+            <div className='hamburger'>
+                <Hamburger
+                    color={"#FFFFFF"} 
+                    onToggle={ 
+                        toggled => {
+                            if (toggled) {
+                                openModal()
+                            } else {
+                                closeModal()
+                            }
+                        }
+                    } style={{color: 'red'}} />
+
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={() => setIsOpen(false)}
+                    contentLabel="Menu"
+                    style={modalStyles}
+                    ariaHideApp={false}
+                >
+                    <div className='menu'>
+                        <ul className='ulItem'>
+                            <li className='liItem'><Link to="/" className='linkTo'>Home</Link></li>
+                            <li className='liItem'><Link to="../nosotros" className='linkTo'>Nosotros</Link></li>
+                            <li className='liItem'><Link to="../asociarse" className='linkTo'>Asociarse</Link></li>
+                            <li className='liItem'><Link to="../ubicaciones" className='linkTo'>Ubicaciones</Link></li>
+                            <li className='is-active liItem'>Contáctanos</li>
+                        </ul>
+                    </div>
+                </Modal>
+            </div>
+
             <div className="hero-body contactanosSD">
                 <div className='contactanos titles'>
                     <p className='title contactanos'>Contáctanos</p>
