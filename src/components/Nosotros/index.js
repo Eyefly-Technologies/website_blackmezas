@@ -328,6 +328,7 @@ const Nosotros = () => {
                 </div>
                 <div className='photoGalleryContainer'>
                     <Carousel
+                        className='photoGalleryCarousel'
                         updateOnItemClick
                         // autoplay
                         // delay={800}
@@ -338,48 +339,30 @@ const Nosotros = () => {
                         }
                         }}
                         activeSlideIndex={activeSlide}
-                        activeSlideProps={{
-                            style: {
-                                width: "35vw",
-                                height: "43vw",
-                            }
-                        }}
+                        activeSlideProps={{className: 'activeItem'}}
                         itemsListProps={{
                             style: {
                                 display: 'flex',
                                 alignItems: "flex-end",
-                            
-    
                             }
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{
-                            children: <img src={RightArrowPG} alt='' />,
-                            style: {
-                                width: '6vw',
-                                height: '5vw',
-                                alignSelf: "center",
-                                background: "transparent",
-                                border: 0,
-                                position: 'absolute',
-                                right: '47vw',
-                                marginTop: '-18%'
-                            }
+                            className: 'forwardPhotoGallery',
+                            children: <img src={RightArrowPG} alt='' />
                         }}
                         backwardBtnProps={{
-                            children: <img src={LeftArrowPG} alt='' />,
-                            style: {
-                                width: '4vw',
-                                height: '3vw',
-                                alignSelf: "center",
-                                background: "transparent",
-                                border: 0,
-                                position: 'absolute',
-                                right: '53vw',
-                                marginTop: '-18%',
-                                zIndex: 3
-                            }
+                            className: 'backwardPhotoGallery',
+                            children: <img src={LeftArrowPG} alt='' />
                         }}
+                        responsiveProps={[
+                            {
+                                maxWidth: 768,
+                                itemsToShow: 1,
+                                // itemsToScroll: 4,
+                                
+                            },
+                          ]}
                         itemsToShow={3}
                         speed={800}
                     >
