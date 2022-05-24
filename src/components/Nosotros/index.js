@@ -258,18 +258,22 @@ const Nosotros = () => {
                     </div>
                     <p className='nIntalacionesTitle'>Instalaciones que respiran excelencia</p>
                 </div>
-                <div className="hero-body">
+                <div className="hero-body nInstalacionesG">
                     <div className='btns nInstalaciones'>
-                        <button className={isParqueoActive ? 'button instalacionesActive': 'button instalaciones'} onClick={parqueoHandler} ref={inputRefParqueo}>Parqueo in-situ</button>
-                        <button className={isEspaciosActive ? 'button instalacionesActive': 'button instalaciones'} onClick={espaciosHandler} ref={inputRefEspacios}>Espacios confortables</button>
-                        <button className={isCafeteriaActive ? 'button instalacionesActive': 'button instalaciones'} onClick={cafeteriaHandler} ref={inputRefCafeteria}>Cafetería</button>
-                        <button className={isArquitecturaActive ? 'button instalacionesActive': 'button instalaciones'} onClick={arquitecturaHandler} ref={inputRefArquitectura}>Arquitectura de primera <br/>línea</button>
+                        <div>
+                            <button className={isParqueoActive ? 'button instalacionesActive': 'button instalaciones'} onClick={parqueoHandler} ref={inputRefParqueo}>Parqueo in-situ</button>
+                            <button className={isEspaciosActive ? 'button instalacionesActive': 'button instalaciones'} onClick={espaciosHandler} ref={inputRefEspacios}>Espacios confortables</button>
+                        </div>
+                        <div>
+                            <button className={isCafeteriaActive ? 'button instalacionesActive': 'button instalaciones'} onClick={cafeteriaHandler} ref={inputRefCafeteria}>Cafetería</button>
+                            <button className={isArquitecturaActive ? 'button instalacionesActive': 'button instalaciones'} onClick={arquitecturaHandler} ref={inputRefArquitectura}>Arquitectura de primera <br/>línea</button>
+                        </div>
                     </div>
                     <div className='images nInstalaciones'>
-                        {isParqueoActive && <img src={Parqueo} alt=''/>}
-                        {isEspaciosActive && <img src={Espacios} alt='' />}
-                        {isCafeteriaActive && <img src={Cafeteria} alt='' />}
-                        {isArquitecturaActive && <img src={Arquitectura} alt='' />}
+                        {isParqueoActive && <img src={Parqueo} alt='' className='imgNinstalaciones' />}
+                        {isEspaciosActive && <img src={Espacios} alt='' className='imgNinstalaciones'/>}
+                        {isCafeteriaActive && <img src={Cafeteria} alt='' className='imgNinstalaciones'/>}
+                        {isArquitecturaActive && <img src={Arquitectura} alt='' className='imgNinstalaciones'/>}
                     </div>
 
                 </div>
