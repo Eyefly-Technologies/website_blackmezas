@@ -34,6 +34,8 @@ import GF1 from './GF1.png';
 import GF2 from './GF2.png';
 import GF3 from './GF3.png';
 import GF4 from './GF4.png';
+import LeftArrowPG from './ArrowLeftPG.png';
+import RightArrowPG from './ArrowRightPG.png';
 
 import Footer from '../Footer'
 
@@ -315,7 +317,7 @@ const Nosotros = () => {
             <section className="hero is-white is-fullheight photoGallery">
                 <div className="hero-head galeriaFotos">
                     <div className='sectionTitle'>
-                        <p className='nInstalacionesSub'>Galería de fotos</p>
+                        <p className='pGallerySub'>Galería de fotos</p>
                         <div className='line pGallery'></div>
                     </div>
                     <p className='pGalleryTitle'>Tu futuro espacio de trabajo</p>
@@ -328,7 +330,7 @@ const Nosotros = () => {
                         containerProps={{
                         style: {
                             width: "100%",
-                            justifyContent: "space-between",
+                            justifyContent: "space-evenly",
                         }
                         }}
                         activeSlideIndex={activeSlide}
@@ -348,22 +350,31 @@ const Nosotros = () => {
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{
-                        children: ">",
-                        style: {
-                            width: 60,
-                            height: 60,
-                            minWidth: 60,
-                            alignSelf: "center"
-                        }
+                            children: <img src={RightArrowPG} alt='' />,
+                            style: {
+                                width: '6vw',
+                                height: '5vw',
+                                alignSelf: "center",
+                                background: "transparent",
+                                border: 0,
+                                position: 'absolute',
+                                right: '47vw',
+                                marginTop: '-18%'
+                            }
                         }}
                         backwardBtnProps={{
-                        children: "<",
-                        style: {
-                            width: 60,
-                            height: 60,
-                            minWidth: 60,
-                            alignSelf: "center"
-                        }
+                            children: <img src={LeftArrowPG} alt='' />,
+                            style: {
+                                width: '4vw',
+                                height: '3vw',
+                                alignSelf: "center",
+                                background: "transparent",
+                                border: 0,
+                                position: 'absolute',
+                                right: '53vw',
+                                marginTop: '-18%',
+                                zIndex: 3
+                            }
                         }}
                         itemsToShow={3}
                         speed={800}
@@ -380,9 +391,6 @@ const Nosotros = () => {
                         <div className='nonActiveItem'>
                             <img src={GF4} alt='' className='imgPhotoGallery'/>
                         </div>
-                        {/* <div className='nonActiveItem'>
-                            <img src={GF4} alt='' className='imgPhotoGallery'/>
-                        </div> */}
                     </Carousel>
                 </div>
             </section>

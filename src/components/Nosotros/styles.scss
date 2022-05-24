@@ -325,9 +325,20 @@ button.instalacionesActive {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 3.125rem;
+    // font-size: 3.125rem;
+    font-size: 3vw;
     line-height: 4.813rem;
     color: #0D304A;
+}
+
+.pGallerySub {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 1.875rem;
+    color: #0D304A;
+    margin-right: 1%;
 }
 
 .line.pGallery {
