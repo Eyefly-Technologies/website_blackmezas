@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.33947a1e.css",
-    "main.js": "/static/js/main.a9a8a43c.js",
+    "main.css": "/static/css/main.581d0652.css",
+    "main.js": "/static/js/main.26bafced.js",
     "static/js/787.f40d1deb.chunk.js": "/static/js/787.f40d1deb.chunk.js",
     "static/media/AS2.png": "/static/media/AS2.5bb57bcfd5092f4d5e5c.png",
     "static/media/AS1.png": "/static/media/AS1.f93b4c389544146579be.png",
@@ -15,13 +15,17 @@
     "static/media/Uruguay.png": "/static/media/Uruguay.d663b463c17008a8eba5.png",
     "static/media/2021.png": "/static/media/2021.874b07ef8963c09aa4a9.png",
     "static/media/Colombia.png": "/static/media/Colombia.47ef2dc105b488a682c9.png",
+    "static/media/GF1.png": "/static/media/GF1.96dd848fdc6e7dfca4ab.png",
     "static/media/parqueo.png": "/static/media/parqueo.fe40e6bf862d08876abb.png",
     "static/media/Florida.png": "/static/media/Florida.ddaf878b07ac0cbc993c.png",
     "static/media/2020.png": "/static/media/2020.04736fb981b2fd96d170.png",
     "static/media/2022.png": "/static/media/2022.b408a319af50fa5f6ebf.png",
+    "static/media/GF3.png": "/static/media/GF3.cd728765e4b19e881c00.png",
     "static/media/1800-2018.png": "/static/media/1800-2018.ed50729a1c02a19d520f.png",
+    "static/media/GF4.png": "/static/media/GF4.5f9ffaefad81b06b1f0d.png",
     "static/media/2019.png": "/static/media/2019.cc28be3f62ed592c0701.png",
     "static/media/Guatemala.png": "/static/media/Guatemala.0b8160be5af189f2936a.png",
+    "static/media/GF2.png": "/static/media/GF2.58b8f4c9ca05134cf7c5.png",
     "static/media/nosotros3.png": "/static/media/nosotros3.ea9793b6d059f5cf7487.png",
     "static/media/nosotros4.png": "/static/media/nosotros4.03c555575f7a27d4ad69.png",
     "static/media/nosotros5.png": "/static/media/nosotros5.6b022bfdb39048aa9c65.png",
@@ -38,12 +42,12 @@
     "static/media/YouTube.svg": "/static/media/YouTube.b74230e081428e0c6137fa7bc80a28ca.svg",
     "index.html": "/index.html",
     "static/media/Marker.svg": "/static/media/Marker.d1215e8905a44de021ec3a1bb99af715.svg",
-    "main.33947a1e.css.map": "/static/css/main.33947a1e.css.map",
-    "main.a9a8a43c.js.map": "/static/js/main.a9a8a43c.js.map",
+    "main.581d0652.css.map": "/static/css/main.581d0652.css.map",
+    "main.26bafced.js.map": "/static/js/main.26bafced.js.map",
     "787.f40d1deb.chunk.js.map": "/static/js/787.f40d1deb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33947a1e.css",
-    "static/js/main.a9a8a43c.js"
+    "static/css/main.581d0652.css",
+    "static/js/main.26bafced.js"
   ]
 }
