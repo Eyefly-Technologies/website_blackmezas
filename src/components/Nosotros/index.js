@@ -251,7 +251,7 @@ const Nosotros = () => {
 
             {/* Nuestras instalaciones */}
             <section className="hero is-white is-fullheight">
-                <div className="hero-head qaportamos">
+                <div className="hero-head nInstalaciones">
                     <div className='sectionTitle'>
                         <p className='nInstalacionesSub'>Nuestras instalaciones</p>
                         <div className='line nInstalaciones'></div>
@@ -281,7 +281,7 @@ const Nosotros = () => {
             </section>
 
             {/* Que aportamos */}
-            <section className="hero is-black is-fullheight">
+            <section className="hero is-black is-fullheight qAportamosCon">
                 <div className="hero-head qaportamos">
                     <div className='sectionTitle'>
                         <p className='nosotros qaportamos'>Nosotros</p>
@@ -289,7 +289,7 @@ const Nosotros = () => {
                     </div>
                     <p className='qAportamos qaportamos'>¿Qué aportamos?</p>
                 </div>
-                <div className="hero-body">
+                <div className="hero-body qAportamosCon">
                     <div className='container has-text-centered'>
                         <div className='columns qaportamos'>
                             <div className='column qaportamos'>

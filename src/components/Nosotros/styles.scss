@@ -168,6 +168,11 @@ $desktop-breakpoint: 1024px;
     margin-right: 1%;
 }
 
+.hero-head.nInstalaciones {
+    margin-left: 10%;
+    padding-top: 6%;
+}
+
 .line.nInstalaciones {
     background-color: #0D304A;
     width: 4.563rem;
@@ -228,6 +233,14 @@ button.instalacionesActive {
     Que aportamos
 ----------------------
 */ 
+.hero.qAportamosCon {
+    padding: 0 10%;
+}
+
+.hero-body.qAportamosCon {
+    padding: 1%;
+}
+
 .columns.qaportamos {
     // display: grid;
     // display: inline-flex;
@@ -238,7 +251,9 @@ button.instalacionesActive {
 .column.qaportamos {
     background-color: $white;
     border-radius: 0.625rem;
-    height: 25.063rem;
+    // height: 25.063rem;
+    height: 41.6vh;
+    // padding: 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,6 +275,7 @@ button.instalacionesActive {
     font-style: normal;
     font-weight: 400;
     font-size: 1.563rem;
+    font-size: 1.5vw;
     line-height: 1.688rem;
     letter-spacing: 0.013rem;
     color: #5C5C5C;
@@ -270,7 +286,6 @@ button.instalacionesActive {
 }
 
 .hero-head.qaportamos {
-    margin-left: 10%;
     padding-top: 6%;
 }
 
@@ -290,6 +305,7 @@ button.instalacionesActive {
     font-style: normal;
     font-weight: 700;
     font-size: 3.75rem;
+    font-size: 3.57vw;
     line-height: 4.813rem;
     color: $white;
 }
@@ -641,6 +657,13 @@ button.instalacionesActive {
         width: 100%;
     }
 
+    .hero-head.nInstalaciones {
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     /* 
     ----------------------
@@ -652,6 +675,10 @@ button.instalacionesActive {
         text-align: center;
     }
 
+    .hero.qAportamosCon {
+        padding: 0 0;
+    }
+
     .nosotros.qaportamos {
         font-size: 1.2rem;
         margin-right: 5%;
@@ -660,6 +687,7 @@ button.instalacionesActive {
     .line {
         margin-top: 10%;
         width: 0%;
+        display: none;
     }
 
     .hero-head.qaportamos {
@@ -670,7 +698,7 @@ button.instalacionesActive {
     }
 
     .columns.qaportamos {
-        gap: 3rem;
+        gap: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -678,12 +706,16 @@ button.instalacionesActive {
 
     .column.qaportamos {
         width: 85%;
-        padding-bottom: 10%;
-        padding-top: 10%;
+        height: 200vw;
+        // height: 190vh;
+        // width: 100%;
+        padding-bottom: 18%;
+        padding-top: 18%;
     }
 
     .qaportamosTitle {
         font-size: 1.6rem;
+        // font-size: 6vw;
         line-height: 2.063rem;
         letter-spacing: 0.006rem;
         padding-bottom: 8%;
@@ -691,13 +723,18 @@ button.instalacionesActive {
     
     .qaportamosDesc {
         font-size: 1.14rem;
-        line-height: 1.688rem;
+        // font-size: 3vw;
+        line-height: 1.6rem;
         letter-spacing: 0.013rem;
         color: #5C5C5C;
     }
 
     .iconQaportamos {
         width: 3.125rem;
+    }
+
+    .contQaportamos {
+        width: 90%;
     }
 
     /* 
@@ -708,7 +745,7 @@ button.instalacionesActive {
 
     .hero.photoGallery{
         justify-content:flex-start;
-        height: 50vh;
+        height: 110vh;
     }
 
     .hero-head.galeriaFotos {
@@ -764,8 +801,7 @@ button.instalacionesActive {
         border: 0;
         position: absolute;
         right: 28vw;
-        margin-top: 160%;
-        // background-color: #0496FF;
+        margin-top: 140%;
     }
     
     .backwardPhotoGallery {
@@ -776,7 +812,7 @@ button.instalacionesActive {
         background: transparent;
         border: 0;
         right: 54vw;
-        margin-top: 160%;
+        margin-top: 140%;
         z-index: 3;
     }
 
