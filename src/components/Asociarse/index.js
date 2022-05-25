@@ -98,7 +98,7 @@ const Asociarse = () => {
                                         <p className='beneficioText'>Ocupación</p>
                                         <p className='beneficioDesc'>de espacios superfluos en el hotel.</p>
                                     </div>
-                                    <button className='button contactanos asociarse'>Contactános</button>
+                                    <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
                                 </div>
                             </div>
                             <div className='numberSlide'>
@@ -121,7 +121,7 @@ const Asociarse = () => {
                                         <p className='beneficioText'>Clientela</p>
                                         <p className='beneficioDesc'>que incide en su actividad hotelera.</p>
                                     </div>
-                                    <button className='button contactanos asociarse'>Contactános</button>
+                                    <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
                                 </div>
                             </div>
                             <div className='numberSlide'>
@@ -144,7 +144,7 @@ const Asociarse = () => {
                                         <p className='beneficioText'>Diversificación</p>
                                         <p className='beneficioDesc'>de riesgo hotelero inherente.</p>
                                     </div>
-                                    <button className='button contactanos asociarse'>Contactános</button>
+                                    <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
                                 </div>
                             </div>
                             <div className='numberSlide'>
@@ -167,7 +167,7 @@ const Asociarse = () => {
                                         <p className='beneficioText'>Rentabilidad</p>
                                         <p className='beneficioDesc'>exponenciada en activos inmovilizados.</p>
                                     </div>
-                                    <button className='button envMensaje'>Contactános</button>
+                                    <Link to="../contactanos" className='linkTo'><button className='button envMensaje'>Contactános</button></Link>
                                 </div>
                             </div>
                             <div className='numberSlide'>
