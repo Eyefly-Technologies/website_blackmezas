@@ -6,7 +6,8 @@ $gray: #535353;
 $black: #000000;
 $white: #FFFFFF;
 
-$font-size-web: 4.5rem;
+
+$font-size-web: 4.3vw;
 $font-family-web: 'Lora';
 $title-line-height-web: 5.75rem;
 
@@ -124,8 +125,9 @@ $desktop-breakpoint: 1024px;
     font-weight: 700;
     font-size: $font-size-web;
     line-height: $title-line-height-web;
-    margin-top: 7%;
-    margin-left: 9%;
+    margin-top: 5%;
+    // margin-left: 9%;
+    text-align: center;
 }
 
 .columns.perspCon {
@@ -369,6 +371,7 @@ $desktop-breakpoint: 1024px;
         width: 100%;
         margin-left: 0%;
         margin-bottom: 15%;
+        text-align: center;
     }
 
     .formCorrNum {
@@ -403,7 +406,6 @@ $desktop-breakpoint: 1024px;
     .title.pvalor {
         font-size: $font-size-mobile;
         line-height: $title-line-height-mobile;
-        text-align: left;
         margin-top: 10%;
         margin-bottom: 3%;
         margin-left: 3%;
