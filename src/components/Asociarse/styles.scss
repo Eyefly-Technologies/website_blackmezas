@@ -11,10 +11,10 @@ $tablet-max-breakpoint: 1023px;
 $desktop-breakpoint: 1024px;
 
 
-.carouselAsociarse{
-    height: 100vh;
-    overflow: hidden;
-}
+// .carouselAsociarse{
+//     height: 100vh;
+//     overflow: hidden;
+// }
 
 .blurAsociarse {
     position: absolute;
@@ -41,7 +41,6 @@ $desktop-breakpoint: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // background-color: #dbdb41;
 }
 
 .beneficioTitle {
@@ -147,3 +146,71 @@ $desktop-breakpoint: 1024px;
 //     height: 100%;
 //     opacity: 0.5;
 // }
+
+
+@media (max-width: $mobile-breakpoint) {
+    .imgAsociarse {
+        height: 100%;
+        width: 250vw;
+        object-fit: cover;
+    }
+
+    // .huy {
+    //     background-color: #0496FF;
+    //     height: 100vh;
+    // }
+
+    .slideAsociarse {
+        height: 100vh;
+    }
+
+    .blurAsociarse {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .blurContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 8% 0%;
+    }
+
+    .asociarseText {
+        text-align: center;
+        margin-bottom: 15%;
+        height: 35%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .beneficioTitle {
+        font-size: 1.2rem;
+        line-height: 1.875rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .beneficioText {
+        font-size: 2.8rem;
+        line-height: 4.375rem;
+    }
+    
+    .beneficioDesc {
+        font-size: 1.4rem;
+        line-height: 1.875rem;
+        padding-top: 8%;
+    }
+
+    .logoAsociarse {
+        position: absolute;
+        top: 8%;
+        left: 34%;
+        width: 40%;
+        margin-bottom: 30%;
+    }
+}

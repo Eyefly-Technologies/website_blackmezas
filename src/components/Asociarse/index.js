@@ -9,6 +9,9 @@ import Modal from 'react-modal';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import AS1 from './AS1.png';
 import AS2 from './AS2.png';
 import AS3 from './AS3.png';
@@ -42,7 +45,7 @@ const Asociarse = () => {
     }
 
     return (
-        <>
+        <section className="hero is-fullheight">
             <div className='hamburger'>
                 <Hamburger
                     color={"#FFFFFF"} 
@@ -74,10 +77,10 @@ const Asociarse = () => {
                     </div>
                 </Modal>
             </div>
-
-            <CarouselProvider
+            {/* <CarouselProvider
                     naturalSlideWidth={100}
                     naturalSlideHeight={60}
+                    // naturalSlideHeight={100}
                     lockOnWindowScroll={true}
                     totalSlides={4}
                     isPlaying={true}
@@ -85,7 +88,7 @@ const Asociarse = () => {
                     orientation={'vertical'}
                     className='carouselAsociarse'
                 >
-                    <Slider>
+                    <Slider className='gui'>
                         <Slide index={0} className='slide'>
                             <img src={AS1} alt='' />
                             <div className='blurAsociarse'>
@@ -183,8 +186,105 @@ const Asociarse = () => {
                         <ButtonBack className='btnBack'><img src={LeftArrow} alt='' /></ButtonBack>
                         <ButtonNext className='btnNext'><img src={RightArrow} alt='' /></ButtonNext>
                     </div>
-            </CarouselProvider>
-        </>
+            </CarouselProvider> */}
+             <Carousel autoPlay infiniteLoop axis='vertical' showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} interval={4000} emulateTouch autoFocus={false} stopOnHover={false} className="huy">
+                <div className='slideAsociarse'>
+                    <img src={AS1} alt='' className='imgAsociarse'/>
+                    <div className='blurAsociarse'>
+                        <div className='blurContainer'>
+                            <div className='logoAsociarse'>
+                                <img src={Logo} alt=''/>
+                            </div>
+                            <div className='asociarseText'>
+                                <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
+                                <p className='beneficioText'>Ocupación</p>
+                                <p className='beneficioDesc'>de espacios superfluos en el hotel.</p>
+                            </div>
+                            <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
+                        </div>
+                    </div>
+                    <div className='numberSlide'>
+                        <p className='numberActive'>01</p>
+                        <div className='activeLine'></div>
+                        <p>02</p>
+                        <p>03</p>
+                        <p>04</p>
+                    </div>
+                </div>
+
+                <div className='slideAsociarse'>
+                    <img src={AS2} alt='' className='imgAsociarse' />
+                    <div className='blurAsociarse'>
+                        <div className='blurContainer'>
+                            <div className='logoAsociarse'>
+                                <img src={Logo} alt=''/>
+                            </div>
+                            <div className='asociarseText'>
+                                <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
+                                <p className='beneficioText'>Clientela</p>
+                                <p className='beneficioDesc'>que incide en su actividad hotelera.</p>
+                            </div>
+                            <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
+                        </div>
+                    </div>
+                    <div className='numberSlide'>
+                        <p className='numberActive'>02</p>
+                        <div className='activeLine'></div>
+                        <p>03</p>
+                        <p>04</p>
+                        <p>01</p>
+                    </div>
+                </div>
+
+                <div className='slideAsociarse'>
+                    <img src={AS3} alt='' className='imgAsociarse' />
+                    <div className='blurAsociarse'>
+                        <div className='blurContainer'>
+                            <div className='logoAsociarse'>
+                                <img src={Logo} alt=''/>
+                            </div>
+                            <div className='asociarseText'>
+                                <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
+                                <p className='beneficioText'>Diversificación</p>
+                                <p className='beneficioDesc'>de riesgo hotelero inherente.</p>
+                            </div>
+                            <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
+                        </div>
+                    </div>
+                    <div className='numberSlide'>
+                        <p className='numberActive'>03</p>
+                        <div className='activeLine'></div>
+                        <p>04</p>
+                        <p>01</p>
+                        <p>02</p>
+                    </div>
+                </div>
+                <div className='slideAsociarse'>
+                    <img src={AS4} alt='' className='imgAsociarse'/>
+                    <div className='blurAsociarse'>
+                        <div className='blurContainer'>
+                            <div className='logoAsociarse'>
+                                <img src={Logo} alt='' />
+                            </div>
+                            <div className='asociarseText'>
+                                <p className='beneficioTitle'>Beneficios de nuestro modelo hotelero</p>
+                                <p className='beneficioText'>Rentabilidad</p>
+                                <p className='beneficioDesc'>exponenciada en activos inmovilizados.</p>
+                            </div>
+                            <Link to="../contactanos" className='linkTo'><button className='button contactanos asociarse'>Contactános</button></Link>
+                        </div>
+                    </div>
+                    <div className='numberSlide'>
+                        <p className='numberActive'>04</p>
+                        <div className='activeLine'></div>
+                        <p>01</p>
+                        <p>02</p>
+                        <p>03</p>
+                    </div>
+                </div>
+
+            </Carousel>
+        </section>
     )
 }
 
