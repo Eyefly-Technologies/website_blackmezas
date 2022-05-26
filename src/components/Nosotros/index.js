@@ -68,56 +68,57 @@ const Nosotros = () => {
     const inputRefArquitectura = useRef(null);
 
     function parqueoHandler() {
-        // clearTimeout()
         setIsParqueoActive(true);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
-
-        // setTimeout(() => {
-        //     espaciosHandler()
-        // }, 3000);
     }
+
     function espaciosHandler() {
-        // clearTimeout()
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(true);
-
-        // setTimeout(() => {
-        //     cafeteriaHandler()
-        // }, 3000);
     }
+
     function cafeteriaHandler() {
-        // clearTimeout()
         setIsParqueoActive(false);
         setIsCafeteriaActive(true);
         setIsArquitecturaActive(false);
         setIsEspaciosActive(false);
-
-        // setTimeout(() => {
-        //     arquitecturaHandler()
-        // }, 3000);
     }
+
     function arquitecturaHandler() {
-        // clearTimeout()
         setIsParqueoActive(false);
         setIsCafeteriaActive(false);
         setIsArquitecturaActive(true);
         setIsEspaciosActive(false);
-
-        // setTimeout(() => {
-        //     parqueoHandler()
-        // }, 3000);
     }
     
 
-    // useEffect(() => {
-    //     if (isParqueoActive) {
-    //         inputRefParqueo.current.focus();
-    //     }
-    // }, [isParqueoActive]);
+    useEffect(() => {
+        if (isParqueoActive) {
+            let id = setTimeout(() => {
+                espaciosHandler()
+            }, 3000);
+            return () => {clearTimeout(id)}
+        } else if (isEspaciosActive) {
+            let id = setTimeout(() => {
+                cafeteriaHandler()
+            }, 3000);
+            return () => {clearTimeout(id)}
+        } else if (isCafeteriaActive) {
+            let id = setTimeout(() => {
+                arquitecturaHandler()
+            }, 3000);
+            return () => {clearTimeout(id)}
+        } else if (isArquitecturaActive) {
+            let id = setTimeout(() => {
+                parqueoHandler()
+            }, 3000);
+            return () => {clearTimeout(id)}
+        }
+    }, [isParqueoActive, isEspaciosActive, isCafeteriaActive, isArquitecturaActive]);
 
 
     const [modalIsOpen, setIsOpen] = useState(false);
