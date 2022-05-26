@@ -82,7 +82,7 @@ const Home = () => {
         </div>
 
         {/* Logo */}
-        <section className="hero is-black is-fullheight">
+        <section className="hero is-black is-fullheight home">
             <div className="hero-body">
                 <div className="container has-text-centered">
                     <img src={logo} alt='BlackMezas blackmezas coworking'/>

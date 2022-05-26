@@ -81,6 +81,13 @@ $desktop-breakpoint: 1024px;
 
 // -----
 
+.hero.home {
+    background-image: url('./home-bg.png');
+    object-fit: cover;
+    background-position: right;
+    background-position: 80% 60%;
+}
+
 .is-black {
     background-color: $black;
 }
