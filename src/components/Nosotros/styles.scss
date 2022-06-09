@@ -111,7 +111,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.813rem;
+    // font-size: 2.813rem;
+    font-size: 2.7vw;
     line-height: 3.625rem;
     color: $white;
     text-align: left;
@@ -147,7 +148,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.563rem;
+    // font-size: 1.563rem;
+    font-size: 1.6vw;
     line-height: 1.875rem;
     color: $white;
     margin-bottom: 2%;
@@ -898,21 +900,85 @@ button.instalacionesActive {
         flex-direction: column;
         margin-top: -3%;
     }
-    
-    .topImages {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .bottomImages {
-        margin-top: -20%;
-        display: flex;
-        justify-content: space-between;
-        width: 59.9%;
-    }
 
     .imgAnosotros {
         width: 17.3vw;
+    }
+
+    /* 
+    ---------------------------
+        ¿Por que BlackMezas
+    ---------------------------
+    */ 
+
+
+    .pqBM.prop.desc {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: $white;
+        width: 12.5rem;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .icnPQBM {
+        width: 2.5rem;
+    }
+
+    .pqBM.pce{
+        background-color: $primary;
+        width: 40%;
+        padding: 2.5rem 2rem 2.5rem 2rem;
+        margin-left: 3%;
+    }
+
+    .pceTitle {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        // font-size: 2.813rem;
+        line-height: 2rem;
+        color: $white;
+        text-align: left;
+        margin-bottom: 5%;
+    }
+
+    .pceDesc {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2vw;
+        line-height: 1.5rem;
+        color: $white;
+        text-align: left;
+    }
+
+    .line.pqbm {
+        background-color: $white;
+        // width: 4.563rem;
+        // height: 0.125rem;
+        width: 3.5rem;
+        height: 0.05rem;
+        margin-top: 7%;
+        margin-left: 2%;
+    }
+
+    .sectionTitle.pqbm {
+        margin-bottom: 2%;
+    }
+
+    .columns.pqbmTop, .columns.pqbmCenter {
+        padding-bottom: 5%;
+    }
+
+    .pqbm.pcs {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8vw;
+        line-height: 1.875rem;
+        color: $white;
+        margin-bottom: 2%;
+        margin-right: 1%;
     }
 }
