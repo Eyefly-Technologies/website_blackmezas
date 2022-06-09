@@ -94,7 +94,7 @@ const Home = () => {
         </section>
 
         {/* Roadmap */}
-        <section className="hero is-black is-fullheight">
+        <section className="hero is-black is-fullheight roadmap">
             <Carousel autoPlay infiniteLoop showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} interval={4000} emulateTouch autoFocus={false} stopOnHover={false}>
                 <div>
                     <img src={img1800_2018} alt='' />

@@ -329,6 +329,17 @@ $desktop-breakpoint: 1024px;
     }
 
     /*
+    ---------------
+        Roadmap
+    ---------------
+    */
+    .hero.roadmap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*
     -----------------------------------
         Una perspectiva continental
     -----------------------------------
