@@ -4,9 +4,14 @@
 $gray: #535353;
 $white: #FFFFFF;
 
-$mobile-breakpoint: 768px;
-$tablet-min-breakpoint: 769px;
-$tablet-max-breakpoint: 1023px;
+// $mobile-breakpoint: 768px;
+// $tablet-min-breakpoint: 769px;
+// $tablet-max-breakpoint: 1023px;
+// $desktop-breakpoint: 1024px;
+
+$mobile-breakpoint: 767px;
+$tablet-min-breakpoint: 992px;
+// $tablet-max-breakpoint: 1023px;
 $desktop-breakpoint: 1024px;
 
 /*
@@ -75,5 +80,41 @@ $desktop-breakpoint: 1024px;
 
     .instaIcon, .faceIcon, .youtubeIcon {
         width: 25px;
+    }
+}
+
+
+@media (min-width:380px) and (max-width: 920px) and (orientation:landscape) {
+    .footer.footCont{
+        height: 4.375rem;
+        background-color: $gray;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footerContent {
+        height: 100%;
+        color: $white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        margin-right: 4%;
+    }
+    
+    .arr {
+        // padding-right: 28.75rem;
+        padding-right: 14%;
+    }
+    
+    .socialIcons{
+        display: flex;
+        justify-content: space-between;
+        width: 13%;
+        
     }
 }
