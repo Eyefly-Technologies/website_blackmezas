@@ -567,11 +567,24 @@ $desktop-breakpoint: 1024px;
 
     .columns.formCorrTop {
         padding-bottom: 0rem;
+        gap: 5%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
     }
     
     .columns.formCorrBottom {
         padding-top: 0rem;
+        gap: 5%
     }
+
+    // .formCorrDesc {
+    //     text-align: center;
+    // }
+
+    // .formCorrCon {
+    //     text-align: center;
+    // }
 
     /*
     ----------------------------
