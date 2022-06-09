@@ -271,7 +271,8 @@ button.instalacionesActive {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.188rem;
+    // font-size: 2.188rem;
+    font-size: 2.188vw;
     line-height: 2.063rem;
     letter-spacing: 0.006rem;
     padding-bottom: 8%;
@@ -300,7 +301,8 @@ button.instalacionesActive {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.563rem;
+    // font-size: 1.563rem;
+    font-size: 1.6vw;
     line-height: 1.875rem;
     color: $white;
     margin-bottom: 2%;
@@ -1058,5 +1060,68 @@ button.instalacionesActive {
 
     .hero-body.nInstalacionesG {
         margin-top: -2%;
+    }
+
+    /* 
+    ----------------------
+        Que aportamos
+    ----------------------
+    */ 
+    .hero.qAportamosCon {
+        padding: 0 10%;
+    }
+
+    .hero-body.qAportamosCon {
+        padding: 1%;
+    }
+
+    .columns.qaportamos {
+        gap: 2rem;
+    }
+
+    .column.qaportamos {
+        background-color: $white;
+        // border-radius: 0.625rem;
+        height: 55vh;
+    }
+
+    .qaportamosTitle {
+        font-size: 2.4vw;
+        padding-bottom: 3%;
+    }
+
+    .qaportamosDesc {
+        font-size: 1.6vw;
+        line-height: 1.2rem;
+    }
+
+    .contQaportamos {
+        width: 75%;
+    }
+
+    .hero-head.qaportamos {
+        padding-top: 6%;
+    }
+
+    .nosotros.qaportamos {
+        font-size: 1.8vw;
+        line-height: 1.875rem;
+        margin-bottom: 0%;
+        margin-right: 1%;
+    }
+
+    .qAportamos.qaportamos {
+        margin-top: -1%;
+    }
+
+    .line {
+        background-color: $white;
+        width: 3.5rem;
+        height: 0.05rem;
+        margin-top: 2.3%;
+    }
+
+    .iconQaportamos {
+        width: 4vw;
     }
 }
