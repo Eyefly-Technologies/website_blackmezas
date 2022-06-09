@@ -27,7 +27,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 3.25rem;
+    // font-size: 3.25rem;
+    font-size: 3vw;
     line-height: 4.188rem;
     color: $white;
     width: 40%;
@@ -37,7 +38,8 @@ $desktop-breakpoint: 1024px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.563rem;
+    // font-size: 1.563rem;
+    font-size: 1.6vw;
     line-height: 1.875rem;
     color: $white;
 }
@@ -856,4 +858,61 @@ button.instalacionesActive {
         display: none;
     }
 
+}
+
+
+@media (min-width:380px) and (max-width: 920px) and (orientation:landscape) {
+    .hero-head.aNosotros {
+        padding-left: 6%;
+        padding-top: 5%;
+    }
+    
+    .aNosotrosTitle {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        // font-size: 3.3vw;
+        line-height: 2rem;
+        color: $white;
+        width: 40%;
+    }
+    
+    .aNosotrosSub {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8vw;
+        line-height: 1.875rem;
+        color: $white;
+    }
+    
+    .line.aNosotros {
+        width: 4rem;
+        height: 0.05rem;
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+    
+    .aNosotrosContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -3%;
+    }
+    
+    .topImages {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bottomImages {
+        margin-top: -20%;
+        display: flex;
+        justify-content: space-between;
+        width: 59.9%;
+    }
+
+    .imgAnosotros {
+        width: 17.3vw;
+    }
 }
