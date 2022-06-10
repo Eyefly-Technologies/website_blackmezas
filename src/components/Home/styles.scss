@@ -150,6 +150,7 @@ $desktop-breakpoint: 1024px;
 
 .column.persCon {
     height: 38.818rem;
+    // height: 38.818vw;
     width: 29.093rem;
     color: $white;
     background-color: $black;
@@ -360,24 +361,40 @@ $desktop-breakpoint: 1024px;
         margin-left: 3%;
     }
 
+    .columns.perspCon {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
     .column.persCon {
-        height: 32.6rem;
+        height: 68vh;
+        // height: 100vw;
         // width: 22.875rem;
         width: 22rem;
-        color: $white;
-        background-color: $black;
-        font-family: 'Lora';
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.4rem;
         line-height: 2.563rem;
+        // position: absolute;
     }
+
 
     .container.perspCon {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .blur-layer {
+        // padding-bottom: 20%;
+        height: 65vh;
+    }
+
+
+    // .maskgroup{
+    //     display: none;
+    // }
 
     /*
     ------------------------------
@@ -423,7 +440,7 @@ $desktop-breakpoint: 1024px;
     ----------------------------
     */
     .column.pvalor {
-        width: 23rem;
+        width: 22rem;
         height: 19.75rem;
     }
 
