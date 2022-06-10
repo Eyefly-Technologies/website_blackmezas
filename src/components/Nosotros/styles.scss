@@ -442,7 +442,8 @@ button.instalacionesActive {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.125rem;
+    // font-size: 1.125rem;
+    font-size: 1.1vw;
     line-height: 1.875rem;
     color: $white;
     margin-bottom: 10%;
@@ -460,7 +461,8 @@ button.instalacionesActive {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.125rem;
+    // font-size: 1.125rem;
+    font-size: 1.1vw;
     line-height: 1.75rem;
     color: $white;
 }
@@ -469,7 +471,8 @@ button.instalacionesActive {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.563rem;
+    // font-size: 1.563rem;
+    font-size: 1.6vw;
     line-height: 1.875rem;
     color: $white;
     margin-bottom: 3%;
@@ -1196,5 +1199,71 @@ button.instalacionesActive {
         right: 54.5vw;
         margin-top: -21%;
         z-index: 3;
+    }
+
+    /* 
+    --------------------
+        Contactanos
+    --------------------
+    */
+    .titleContactanos {
+        margin-bottom: 7%;
+    }
+
+    .descContactanos {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        // font-size: 1.125rem;
+        font-size: 1.6vw;
+        line-height: 1.875rem;
+        color: $white;
+        margin-bottom: 10%;
+    }
+
+    .button.contactanos {
+        background-color: $primary;
+        border: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2.188rem 4.5rem;
+
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        // font-size: 1.125rem;
+        font-size: 1.6vw;
+        line-height: 1.75rem;
+        color: $white;
+    }
+
+    .contactanosSub {
+        font-size: 1.8vw;
+        margin-bottom: 3%;
+        margin-right: 2%;
+    }
+
+    .line.contactanos {
+        background-color: $white;
+        width: 3.5rem;
+        height: 0.05rem;
+        margin-top: 6.5%;
+    }
+
+    .contactanos.left {
+        width: 33.7%;
+        margin-left: 6%;
+        margin-right: 15%;
+    }
+
+    .hero-body.contactanos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .patternContactanos {
+        width: 35vw;
     }
 }

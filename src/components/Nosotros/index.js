@@ -396,7 +396,7 @@ const Nosotros = () => {
                         <Link to="../contactanos" className='linkTo'><button className='button contactanos'>Contactános</button></Link>
                     </div>
                     <div className='patternDiv'>
-                        <img src={Pattern} alt='' />
+                        <img src={Pattern} alt='' className='patternContactanos'/>
                     </div>
                 </div>
                 <Footer/>
