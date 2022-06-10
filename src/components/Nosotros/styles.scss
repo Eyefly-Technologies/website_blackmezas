@@ -870,6 +870,10 @@ button.instalacionesActive {
         display: none;
     }
 
+    .button.contactanos {
+        font-size: 4vw;
+    }
+
 }
 
 
@@ -970,10 +974,11 @@ button.instalacionesActive {
         background-color: $white;
         // width: 4.563rem;
         // height: 0.125rem;
-        width: 3.5rem;
+        width: 3rem;
         height: 0.05rem;
         margin-top: 7%;
         margin-left: 2%;
+        // display: none;
     }
 
     .sectionTitle.pqbm {
@@ -1080,8 +1085,14 @@ button.instalacionesActive {
         padding: 1%;
     }
 
+    .qAportamosCC {
+        display: flex;
+        justify-content: center;
+    }
+
     .columns.qaportamos {
         gap: 2rem;
+        width: 100%;
     }
 
     .column.qaportamos {

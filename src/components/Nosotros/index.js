@@ -291,7 +291,7 @@ const Nosotros = () => {
                     <p className='qAportamos qaportamos'>¿Qué aportamos?</p>
                 </div>
                 <div className="hero-body qAportamosCon">
-                    <div className='container has-text-centered'>
+                    <div className='container has-text-centered qAportamosCC'>
                         <div className='columns qaportamos'>
                             <div className='column qaportamos'>
                                 <div className='contQaportamos'>
