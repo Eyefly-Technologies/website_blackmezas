@@ -431,7 +431,8 @@ button.instalacionesActive {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
+    font-size: 2.4vw;
     line-height: 3.188rem;
     color: $white;
     margin-bottom: 15%;
@@ -764,6 +765,7 @@ button.instalacionesActive {
 
     .pGalleryTitle {
         font-size: 2.5rem;
+        // font-size: 2.5vw;
         line-height: 3rem;
         text-align: center;
     }
@@ -1123,5 +1125,76 @@ button.instalacionesActive {
 
     .iconQaportamos {
         width: 4vw;
+    }
+
+    /* 
+    -------------------------
+        Galeria de fotos
+    -------------------------
+    */
+
+    .hero.photoGallery{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .hero-head.galeriaFotos {
+        right: 19vw;
+    }
+
+    .pGalleryTitle {
+        font-size: 3vw;
+        margin-top: -6%;
+    }
+
+    .pGallerySub {
+        font-size: 1.8vw;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .line.pGallery {
+        background-color: #0D304A;
+        width: 3.5rem;
+        height: 0.05rem;
+        margin-top: 5.5%;
+    }
+
+    .photoGalleryContainer {
+        margin-top: 5%;
+    }
+
+    .nonActiveItem {
+        width: 30vw;
+        height: 28vw;
+    }
+
+    .activeItem {
+        height: 43vw;
+        width: 35vw;
+    }
+
+    .forwardPhotoGallery {
+        width: 7vw;
+        height: 6vw;
+        align-self: center;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        right: 48vw;
+        margin-top: -21%;
+    }
+
+    .backwardPhotoGallery {
+        position: absolute;
+        width: 5vw;
+        height: 4vw;
+        align-self: center;
+        background: transparent;
+        border: 0;
+        right: 54.5vw;
+        margin-top: -21%;
+        z-index: 3;
     }
 }
