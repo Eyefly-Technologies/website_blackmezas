@@ -531,7 +531,7 @@ $desktop-breakpoint: 1024px;
         display: flex;
         flex-direction: row-reverse;
         z-index: 2;
-        position: absolute;
+        // position: absolute;
         right: 0;
         // display: none;
     }
@@ -542,6 +542,7 @@ $desktop-breakpoint: 1024px;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: -10%
     }
 
     .column.persCon p{
