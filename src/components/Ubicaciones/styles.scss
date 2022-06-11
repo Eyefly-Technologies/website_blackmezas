@@ -144,3 +144,48 @@ $desktop-breakpoint: 1024px;
         width: 21.875rem;
     }
 }
+
+
+@media (min-width:380px) and (max-width: 920px) and (orientation:landscape) {
+    .title.ubicaciones {
+        font-size: 7rem;
+        // margin-top: 50%;
+        line-height: 12rem;
+    }
+    
+    .paises {
+        font-size: 3.375rem;
+        justify-content: center;
+    }
+    
+    .columns.flur {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 20%;
+    }
+    
+    .columns.colgua {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .columns.arg {
+        padding-bottom: 8%;
+    }
+    
+    .proximamente {
+        margin-top: 11%;
+        font-size: 2rem;
+    }
+    
+    .imgPais {
+        width: 20rem;
+    }
+
+    .hero.paises {
+        height: 150%;
+    }
+
+}
