@@ -11,11 +11,6 @@ $tablet-max-breakpoint: 1023px;
 $desktop-breakpoint: 1024px;
 
 
-// .footerCon {
-//     position: fixed;
-//     width: 100%;
-//     bottom: 0;
-// }
 
 .hero-body.contactanosSD {
     display: flex;
@@ -114,6 +109,10 @@ $desktop-breakpoint: 1024px;
     line-height: 2rem;
 }
 
+.select {
+    z-index: 0;
+}
+
 
 @media (max-width: $mobile-breakpoint) {
     .title.contactanos{
@@ -168,25 +167,14 @@ $desktop-breakpoint: 1024px;
     }
     
     .title.contactanos {
-        // font-family: 'Lora';
-        // font-style: normal;
-        // font-weight: 700;
         font-size: 5vw;
         line-height: 2rem;
-        // text-align: center;
-        // color: #FFFFFF;
     
     }
     
     .subtitle.contactanos {
-        // font-family: 'Poppins';
-        // font-style: normal;
-        // font-weight: 400;
         font-size: 2.5vw;
         line-height: 1.75rem;
-        // text-align: center;
-        // color: #FFFFFF;
-        // opacity: 0.7;
     }
     
     .form.containerF {
@@ -232,7 +220,6 @@ $desktop-breakpoint: 1024px;
     }
     
     .field, .selectElement {
-        // width: 438px;
         width: 25.5vw;
     }
     
@@ -244,10 +231,6 @@ $desktop-breakpoint: 1024px;
         width: 100%;
     }
 
-    // .control {
-    //     background-color: #0496FF;
-    //     height: 50px;
-    // }
     
     .label {
         font-family: 'Poppins';
