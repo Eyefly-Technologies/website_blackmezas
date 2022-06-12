@@ -5,6 +5,7 @@ import 'bulma/css/bulma.min.css';
 import { Link } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import Modal from 'react-modal';
+import { useSnackbar } from 'react-simple-snackbar';
 import emailjs from 'emailjs-com';
 
 import Footer from '../Footer'
@@ -52,6 +53,8 @@ const Contactanos = () => {
     const areaInput = useInput("Información")
     const messageInput = useInput("")
 
+    const [openSnackbar, closeSnackbar] = useSnackbar()
+
     const sendEmail = async (name, email, message, subject, area) => {
         try {
             const response = await emailjs.send(
@@ -62,11 +65,12 @@ const Contactanos = () => {
             );
     
             if (response.status === 200) {
-                alert("Mensaje enviado, te responderemos en la brevedad posible");
                 nameInput.onsubmit()
                 emailInput.onsubmit()
                 subjectInput.onsubmit()
                 messageInput.onsubmit()
+                openSnackbar('Mensaje enviado, te responderemos en la brevedad posible')
+                // alert("Mensaje enviado, te responderemos en la brevedad posible");
             }
         } catch (error) {
             alert("Failed to send email. Error: ", error);

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom";
 import React, { useEffect } from 'react';
+import SnackbarProvider from 'react-simple-snackbar'
 import './styles.css';
 
 import Home from '../Home';
@@ -13,15 +14,17 @@ function App() {
     document.title = "BlackMezas"
   }, []);
   return (
+    
     <HashRouter>
       <Routes basename="/">
         <Route exact path="/" element={<Home />} />
         <Route exact path="/nosotros" element={<Nosotros />} />
         <Route exact path="/asociarse" element={<Asociarse />} />
         <Route exact path="/ubicaciones" element={<Ubicaciones />} />
-        <Route exact path="/contactanos" element={<Contactanos />} />
+        <Route exact path="/contactanos" element={<SnackbarProvider><Contactanos /></SnackbarProvider>} />
       </Routes>
     </HashRouter>
+    
   );
 }
 
