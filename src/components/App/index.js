@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom";
+import { BrowserRouter as Route, Routes, HashRouter } from "react-router-dom";
 import React, { useEffect } from 'react';
 import SnackbarProvider from 'react-simple-snackbar'
 import './styles.css';
