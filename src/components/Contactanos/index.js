@@ -53,7 +53,14 @@ const Contactanos = () => {
     const areaInput = useInput("Información")
     const messageInput = useInput("")
 
-    const [openSnackbar, closeSnackbar] = useSnackbar()
+    const options = {
+        position: 'top-center',
+        style: {
+          backgroundColor: '#0496FF',
+        },
+      }
+
+    const [openSnackbar, closeSnackbar] = useSnackbar(options)
 
     const sendEmail = async (name, email, message, subject, area) => {
         try {
