@@ -60,7 +60,15 @@ const Contactanos = () => {
         },
       }
 
+    const error_options = {
+        position: 'top-center',
+        style: {
+            backgroundColor: '#FB3747',
+        },
+    }
+
     const [openSnackbar, closeSnackbar] = useSnackbar(options)
+    const [openErrorSnackbar, closeErrorSnackbar] = useSnackbar(error_options)
 
     const sendEmail = async (name, email, message, subject, area) => {
         try {
@@ -80,7 +88,8 @@ const Contactanos = () => {
                 // alert("Mensaje enviado, te responderemos en la brevedad posible");
             }
         } catch (error) {
-            alert("Failed to send email. Error: ", error);
+            openErrorSnackbar('Error, vuelva a intentarlo.')
+            // alert("Failed to send email. Error: ", error);
         }
         
     };
