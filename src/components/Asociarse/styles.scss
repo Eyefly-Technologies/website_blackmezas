@@ -16,6 +16,13 @@ $desktop-breakpoint: 1024px;
 //     overflow: hidden;
 // }
 
+.hamburger {
+    // position: absolute;
+    // right: 5%;
+    // top: 5%;
+    z-index: 5;
+}
+
 .blurAsociarse {
     position: absolute;
     width: 58.5%;
