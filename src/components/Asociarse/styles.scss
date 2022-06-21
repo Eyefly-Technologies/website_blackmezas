@@ -147,6 +147,36 @@ $desktop-breakpoint: 1024px;
 //     opacity: 0.5;
 // }
 
+.carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover,
+.carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
+    background-color: transparent;
+    width: 100%;
+    // left: -146px;
+}
+
+.carousel .control-next.control-arrow:before {
+    content: url('./rightArrow.png');
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    bottom: 20%;
+    right: 4.3%;
+}
+
+.carousel .control-prev.control-arrow:before {
+    content: url('./leftArrow.png');
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    bottom: 20%;
+    right: 8.3%;
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow{
+    opacity: 1;
+}
+
+
 
 @media (max-width: $mobile-breakpoint) {
     .imgAsociarse {
@@ -212,6 +242,19 @@ $desktop-breakpoint: 1024px;
         left: 34%;
         width: 40%;
         margin-bottom: 30%;
+    }
+
+    .carousel .control-next.control-arrow:before {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        bottom: 10%;
+        right: 36%;
+    }
+    
+    .carousel .control-prev.control-arrow:before {
+        bottom: 10%;
+        right: 53%;
     }
 }
 

@@ -14,8 +14,6 @@ import AS2 from './AS2.png';
 import AS3 from './AS3.png';
 import AS4 from './AS4.png';
 import Logo from './logo.png';
-import RightArrow from './rightArrow.png';
-import LeftArrow from './leftArrow.png';
 
 
 const modalStyles = {
@@ -74,7 +72,8 @@ const Asociarse = () => {
                     </div>
                 </Modal>
             </div>
-            <Carousel autoPlay infiniteLoop axis='vertical' showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} interval={4000} emulateTouch autoFocus={false} stopOnHover={false} className="huy">
+            {/* showArrows={false} */}
+            <Carousel autoPlay infiniteLoop axis='vertical'  showIndicators={false} showThumbs={false} showStatus={false} interval={4000} emulateTouch autoFocus={false} stopOnHover={false} className="huy">
                 <div className='slideAsociarse'>
                     <img src={AS1} alt='' className='imgAsociarse'/>
                     <div className='blurAsociarse'>
