@@ -97,7 +97,7 @@ function Ubicaciones(){
                                 </>
                             )}
                         </div>
-                        <div className="column cHover">
+                        {/* <div className="column cHover">
                             <p className='pais uruguay' onMouseEnter={() => setIsShownUruguay(true)} onMouseLeave={() => setIsShownUruguay(false)}>Uruguay</p>
                             {isShownUruguay && (
                                 <>
@@ -105,9 +105,7 @@ function Ubicaciones(){
                                     <p className='proximamente'>Próximamente</p>
                                 </>
                             )}
-                        </div>
-                    </div>
-                    <div className="columns colgua">
+                        </div> */}
                         <div className="column cHover">
                             <p className='pais colombia' onMouseEnter={() => setIsShownColombia(true)} onMouseLeave={() => setIsShownColombia(false)}>Colombia</p>
                             {isShownColombia && (
@@ -117,6 +115,8 @@ function Ubicaciones(){
                                 </>
                             )}
                         </div>
+                    </div>
+                    <div className="columns colgua">
                         <div className="column cHover">
                             <p className='pais guatemala' onMouseEnter={() => setIsShownGuatemala(true)} onMouseLeave={() => setIsShownGuatemala(false)}>Guatemala</p>
                             {isShownGuatemala && (
@@ -125,8 +125,6 @@ function Ubicaciones(){
                                 </>
                             )}
                         </div>
-                    </div>
-                    <div className="columns arg">
                         <div className="column cHover">
                             <p className='pais argentina' onMouseEnter={() => setIsShownArgentina(true)} onMouseLeave={() => setIsShownArgentina(false)}>Argentina</p>
                             {isShownArgentina && (
@@ -137,6 +135,8 @@ function Ubicaciones(){
                             )}
                         </div>
                     </div>
+                    {/* <div className="columns arg">
+                    </div> */}
                 </div>
             </section>
         </div>
